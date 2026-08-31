@@ -77,6 +77,17 @@
     font-size: 0.85rem;
   }
   .controls input { flex: 1; min-width: 160px; }
+  .controls button {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .controls button:hover { border-color: var(--orange); color: var(--orange); }
+  .controls button:disabled { opacity: 0.6; cursor: default; }
   .meta-line {
     color: var(--muted);
     font-size: 0.78rem;
@@ -145,6 +156,24 @@
     font-size: 0.9rem;
   }
   .error { color: #c0392b; }
+  .more-wrap {
+    padding: 14px 4px 4px;
+  }
+  .more-wrap button {
+    background: none;
+    border: none;
+    color: var(--orange);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  .more-wrap button:hover { text-decoration: underline; }
+  .more-wrap button:disabled {
+    color: var(--muted);
+    cursor: default;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -159,9 +188,13 @@
     <div class="controls">
       <input id="search" type="search" placeholder="Search titles & summaries…">
       <select id="category"><option value="All">All categories</option></select>
+      <button id="refreshBtn" title="Re-check data.json for updates">↻ Refresh</button>
     </div>
     <div class="meta-line" id="metaLine">Loading…</div>
     <ol class="list" id="list"></ol>
+    <div class="more-wrap" id="moreWrap" hidden>
+      <button id="moreBtn">More</button>
+    </div>
   </main>
 
   <footer id="footer"></footer>
@@ -173,10 +206,15 @@
   const searchEl = document.getElementById('search');
   const categoryEl = document.getElementById('category');
   const footerEl = document.getElementById('footer');
+  const refreshBtn = document.getElementById('refreshBtn');
+  const moreWrap = document.getElementById('moreWrap');
+  const moreBtn = document.getElementById('moreBtn');
 
+  const PAGE_SIZE = 20;
   let allItems = [];
   let generatedAt = null;
   let sourceUrl = '';
+  let visibleCount = PAGE_SIZE;
 
   function timeAgo(iso) {
     const dt = new Date(iso);
@@ -216,17 +254,21 @@
       );
     }
 
-    metaEl.textContent = `${items.length} of ${allItems.length} updates` +
+    const visible = items.slice(0, visibleCount);
+
+    metaEl.textContent = `Showing ${visible.length} of ${items.length} matching updates ` +
+      `(${allItems.length} total)` +
       (generatedAt ? ` · feed refreshed ${timeAgo(generatedAt)} · source: ${sourceUrl}` : '');
 
     listEl.innerHTML = '';
     if (items.length === 0) {
       listEl.innerHTML = '<li class="empty">No updates match your filters.</li>';
+      moreWrap.hidden = true;
       return;
     }
 
     const frag = document.createDocumentFragment();
-    items.forEach((item, idx) => {
+    visible.forEach((item, idx) => {
       const li = document.createElement('li');
       li.className = 'row';
       li.innerHTML = `
@@ -244,6 +286,15 @@
       frag.appendChild(li);
     });
     listEl.appendChild(frag);
+
+    const remaining = items.length - visible.length;
+    if (remaining > 0) {
+      moreWrap.hidden = false;
+      moreBtn.disabled = false;
+      moreBtn.textContent = `More (${remaining} left)`;
+    } else {
+      moreWrap.hidden = true;
+    }
   }
 
   function populateCategories(items) {
@@ -252,26 +303,43 @@
       cats.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
   }
 
-  fetch('data.json', { cache: 'no-store' })
-    .then((r) => {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    })
-    .then((data) => {
-      allItems = data.items || [];
-      generatedAt = data.generated_at || null;
-      sourceUrl = data.source || '';
-      populateCategories(allItems);
-      render();
-      footerEl.textContent = 'Static site · data refreshed periodically by GitHub Actions · not affiliated with Databricks.';
-    })
-    .catch((err) => {
-      listEl.innerHTML = `<li class="error">Couldn't load data.json: ${escapeHtml(err.message)}. ` +
-        `Run scripts/fetch_feed.py to generate it, or check the GitHub Action.</li>`;
-    });
+  function loadData() {
+    if (refreshBtn) { refreshBtn.disabled = true; refreshBtn.textContent = 'Refreshing…'; }
+    fetch('data.json', { cache: 'no-store' })
+      .then((r) => {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then((data) => {
+        allItems = data.items || [];
+        generatedAt = data.generated_at || null;
+        sourceUrl = data.source || '';
+        populateCategories(allItems);
+        render();
+        footerEl.textContent = 'Static site · data refreshed periodically by GitHub Actions · not affiliated with Databricks.';
+      })
+      .catch((err) => {
+        listEl.innerHTML = `<li class="error">Couldn't load data.json: ${escapeHtml(err.message)}. ` +
+          `Run scripts/fetch_feed.py to generate it, or check the GitHub Action.</li>`;
+      })
+      .finally(() => {
+        if (refreshBtn) { refreshBtn.disabled = false; refreshBtn.textContent = '↻ Refresh'; }
+      });
+  }
 
-  searchEl.addEventListener('input', render);
-  categoryEl.addEventListener('change', render);
+  function resetAndRender() {
+    visibleCount = PAGE_SIZE;
+    render();
+  }
+
+  loadData();
+  searchEl.addEventListener('input', resetAndRender);
+  categoryEl.addEventListener('change', resetAndRender);
+  refreshBtn.addEventListener('click', loadData);
+  moreBtn.addEventListener('click', () => {
+    visibleCount += PAGE_SIZE;
+    render();
+  });
 })();
 </script>
 </body>
