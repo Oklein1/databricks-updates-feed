@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Databricks News</title>
+<meta name="description" content="A Hacker-News-style reader for the Databricks docs release notes feed.">
+<style>
+  :root {
+    --orange: #ff6600;
+    --bg: #f6f6ef;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --muted: #828282;
+    --border: #edecea;
+    --badge-bg: #fff6ee;
+    --badge-border: #ffd9b3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0f;
+      --card: #171717;
+      --text: #eaeaea;
+      --muted: #9a9a9a;
+      --border: #2a2a2a;
+      --badge-bg: #2a1c10;
+      --badge-border: #5a3210;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Verdana, Arial, sans-serif;
+  }
+  a { color: inherit; }
+  .topbar {
+    background: var(--orange);
+    color: white;
+    padding: 12px 16px;
+  }
+  .topbar-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .topbar h1 {
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .topbar .sub {
+    font-size: 0.82rem;
+    opacity: 0.92;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 14px 16px 40px;
+  }
+  .controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .controls input, .controls select {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 0.85rem;
+  }
+  .controls input { flex: 1; min-width: 160px; }
+  .meta-line {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-bottom: 10px;
+  }
+  ol.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    gap: 8px;
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .rank {
+    color: var(--muted);
+    min-width: 24px;
+    text-align: right;
+    font-size: 0.9rem;
+    padding-top: 1px;
+  }
+  .title a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .title a:hover { text-decoration: underline; }
+  .domain {
+    color: var(--muted);
+    font-size: 0.76rem;
+    margin-left: 4px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.76rem;
+    margin-top: 3px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--badge-bg);
+    color: var(--orange);
+    border: 1px solid var(--badge-border);
+    border-radius: 3px;
+    padding: 0 5px;
+    font-size: 0.7rem;
+    margin-right: 6px;
+  }
+  .summary {
+    color: var(--text);
+    opacity: 0.8;
+    font-size: 0.83rem;
+    margin-top: 5px;
+    line-height: 1.35;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+    padding: 20px 0 40px;
+  }
+  .empty, .error {
+    color: var(--muted);
+    padding: 30px 4px;
+    font-size: 0.9rem;
+  }
+  .error { color: #c0392b; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <h1>🧱 Databricks News</h1>
+      <span class="sub">release notes, straight from the docs feed</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search titles & summaries…">
+      <select id="category"><option value="All">All categories</option></select>
+    </div>
+    <div class="meta-line" id="metaLine">Loading…</div>
+    <ol class="list" id="list"></ol>
+  </main>
+
+  <footer id="footer"></footer>
+
+<script>
+(function () {
+  const listEl = document.getElementById('list');
+  const metaEl = document.getElementById('metaLine');
+  const searchEl = document.getElementById('search');
+  const categoryEl = document.getElementById('category');
+  const footerEl = document.getElementById('footer');
+
+  let allItems = [];
+  let generatedAt = null;
+  let sourceUrl = '';
+
+  function timeAgo(iso) {
+    const dt = new Date(iso);
+    if (isNaN(dt)) return iso;
+    const seconds = Math.floor((Date.now() - dt.getTime()) / 1000);
+    if (seconds < 60) return 'just now';
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return minutes + (minutes === 1 ? ' minute ago' : ' minutes ago');
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return hours + (hours === 1 ? ' hour ago' : ' hours ago');
+    const days = Math.floor(hours / 24);
+    if (days < 30) return days + (days === 1 ? ' day ago' : ' days ago');
+    const months = Math.floor(days / 30);
+    if (months < 12) return months + (months === 1 ? ' month ago' : ' months ago');
+    const years = Math.floor(days / 365);
+    return years + (years === 1 ? ' year ago' : ' years ago');
+  }
+
+  function escapeHtml(s) {
+    return (s || '').replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+  }
+
+  function render() {
+    const query = searchEl.value.trim().toLowerCase();
+    const category = categoryEl.value;
+
+    let items = allItems;
+    if (category !== 'All') {
+      items = items.filter((i) => i.category === category);
+    }
+    if (query) {
+      items = items.filter((i) =>
+        i.title.toLowerCase().includes(query) ||
+        (i.summary || '').toLowerCase().includes(query)
+      );
+    }
+
+    metaEl.textContent = `${items.length} of ${allItems.length} updates` +
+      (generatedAt ? ` · feed refreshed ${timeAgo(generatedAt)} · source: ${sourceUrl}` : '');
+
+    listEl.innerHTML = '';
+    if (items.length === 0) {
+      listEl.innerHTML = '<li class="empty">No updates match your filters.</li>';
+      return;
+    }
+
+    const frag = document.createDocumentFragment();
+    items.forEach((item, idx) => {
+      const li = document.createElement('li');
+      li.className = 'row';
+      li.innerHTML = `
+        <div class="rank">${idx + 1}.</div>
+        <div>
+          <div class="title">
+            <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>
+            <span class="domain">(${escapeHtml(item.domain)})</span>
+          </div>
+          <div class="meta">
+            <span class="badge">${escapeHtml(item.category)}</span>${timeAgo(item.published)}
+          </div>
+          <div class="summary">${escapeHtml(item.summary)}</div>
+        </div>`;
+      frag.appendChild(li);
+    });
+    listEl.appendChild(frag);
+  }
+
+  function populateCategories(items) {
+    const cats = Array.from(new Set(items.map((i) => i.category))).sort();
+    categoryEl.innerHTML = '<option value="All">All categories</option>' +
+      cats.map((c) => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
+  }
+
+  fetch('data.json', { cache: 'no-store' })
+    .then((r) => {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then((data) => {
+      allItems = data.items || [];
+      generatedAt = data.generated_at || null;
+      sourceUrl = data.source || '';
+      populateCategories(allItems);
+      render();
+      footerEl.textContent = 'Static site · data refreshed periodically by GitHub Actions · not affiliated with Databricks.';
+    })
+    .catch((err) => {
+      listEl.innerHTML = `<li class="error">Couldn't load data.json: ${escapeHtml(err.message)}. ` +
+        `Run scripts/fetch_feed.py to generate it, or check the GitHub Action.</li>`;
+    });
+
+  searchEl.addEventListener('input', render);
+  categoryEl.addEventListener('change', render);
+})();
+</script>
+</body>
+</html>
