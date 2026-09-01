@@ -1,8 +1,35 @@
 {
-  "generated_at": "2026-08-31T17:29:59.150577+00:00",
+  "generated_at": "2026-09-01T09:44:52.528861+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1089,
+  "count": 1093,
   "items": [
+    {
+      "id": "732b733ffcb4",
+      "title": "Pipeline events system table is in Beta",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#pipeline-events-system-table-is-in-beta",
+      "summary": "The pipeline_events system table is in Beta . This table records Lakeflow pipelines event log entries for pipelines in your account, capturing lifecycle transitions, flow progress, data quality metrics, errors, and other operational data across all pipelines and workspaces in a region. Use it to query historical pipeline activity, build alerts on pipeline failures, and correlate pipeline behavior with other Lakeflow system tables. See Pipeline events system table reference .",
+      "published": "2026-08-31T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "a6fab8368d96",
+      "title": "Restrict service principal OAuth secrets to specific API scopes",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#restrict-service-principal-oauth-secrets-to-specific-api-scopes",
+      "summary": "You can now restrict a service principal's OAuth secret to specific API scopes, such as sql or jobs , instead of all APIs. A token minted from a scoped secret can't exceed those scopes, which limits the impact of a leaked secret. See Authorize service principal access to Databricks with OAuth .",
+      "published": "2026-08-29T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "b059effc5e01",
+      "title": "Unity Catalog Skills (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#unity-catalog-skills-beta",
+      "summary": "You can now publish, govern, and share agent skills with Unity Catalog. A skill is a first-class Unity Catalog securable ( catalog.schema.skill ) that follows the SKILL.md specification , so you register it once and control who can discover, use, and update it with the same permissions, tags, and audit that protect your tables. Coding agents download published skills or load them live over MCP. See What are Unity Catalog Skills .",
+      "published": "2026-08-28T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
     {
       "id": "2e27c122b464",
       "title": "Dashboard enhancements and bug fixes",
@@ -566,6 +593,15 @@
       "title": "Google Search Console connector is available in Beta",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#google-search-console-connector-is-available-in-beta",
       "summary": "The managed Google Search Console connector is now available in Beta in Databricks Lakeflow Connect. Use it to ingest search performance data, site metadata, and sitemap information from Google Search Console into Databricks. The connector supports daily and hourly search analytics dimensions (date, country, device, page, query), as well as verified sites and submitted sitemaps. Incremental ingestion is supported for all search analytics tables.",
+      "published": "2026-08-12T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "79c7699876a1",
+      "title": "Glean connector in Lakeflow Connect (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#glean-connector-in-lakeflow-connect-beta",
+      "summary": "You can now ingest data from Glean into Databricks using the managed Glean connector in Lakeflow Connect. The connector ingests company-wide usage insights for search, Assistant, and agents, along with the shortcuts (go links) defined in your Glean deployment, using a Glean Client API token. This feature is in Beta . See Glean connector .",
       "published": "2026-08-12T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -1165,6 +1201,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "402776c8204a",
+      "title": "Databricks Runtime 19: July 23, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-july-23-2026",
+      "summary": "Databricks Runtime 19 is now generally available (GA). For lifecycle details, see Databricks Runtime support lifecycles . Behavioral changes Arrow-optimized Python UDFs enabled by default : Regular Python UDFs now use Arrow-based serialization by default. This can change type-coercion behavior for some UDFs compared to previous releases. To restore the previous behavior, set spark.databricks.execution.pythonUDF.arrow.enabled to false . New features and improvements TopN pushdown for fine-grained access control on dedicated compute : Fine-grained access control on dedicated compute now pushes d",
+      "published": "2026-07-23T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "93675b9dcdcb",
       "title": "Genie Agents enhancements",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agents-enhancements-2",
@@ -1216,15 +1261,6 @@
       "summary": "With the general availability of Databricks Runtime 19, Databricks Runtime 18 and Databricks Runtime 18 for Machine Learning have transitioned to long-term support (LTS). LTS versions receive three years of stability and security fixes. For release notes, see Databricks Runtime 18 LTS and Databricks Runtime 18 LTS for Machine Learning . For lifecycle details, see Databricks Runtime support lifecycles .",
       "published": "2026-07-23T00:00:00+00:00",
       "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "402776c8204a",
-      "title": "Databricks Runtime 19: July 23, 2026",
-      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-july-23-2026",
-      "summary": "Databricks Runtime 19 is now generally available (GA). For lifecycle details, see Databricks Runtime support lifecycles . Behavioral changes Arrow-optimized Python UDFs enabled by default : Regular Python UDFs now use Arrow-based serialization by default. This can change type-coercion behavior for some UDFs compared to previous releases. To restore the previous behavior, set spark.databricks.execution.pythonUDF.arrow.enabled to false . New features and improvements TopN pushdown for fine-grained access control on dedicated compute : Fine-grained access control on dedicated compute now pushes d",
-      "published": "2026-07-23T00:00:00+00:00",
-      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -2110,6 +2146,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "2ac99e4fdcfb",
+      "title": "Databricks Runtime 19 (Beta): June 26, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-26-2026",
+      "summary": "Behavioral changes Environment variable availability restricted in standard access mode : In standard access mode , only a predefined set of environment variables is available to the Spark engine and init scripts. This set includes common configuration variables, such as proxy settings ( HTTP_PROXY ), cloud credentials ( AWS_ACCESS_KEY_ID , AZURE_CLIENT_ID ), and catalog variables ( CATALOG ). Other variables that you set on a cluster remain available to your user code, including UDFs, but are not available to the Spark engine or init scripts. Previously, all cluster environment variables were",
+      "published": "2026-06-26T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "b95933c846db",
       "title": "Microsoft Dynamics 365 connector (GA)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#microsoft-dynamics-365-connector-ga",
@@ -2128,12 +2173,12 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "2ac99e4fdcfb",
-      "title": "Databricks Runtime 19 (Beta): June 26, 2026",
-      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-26-2026",
-      "summary": "Behavioral changes Environment variable availability restricted in standard access mode : In standard access mode , only a predefined set of environment variables is available to the Spark engine and init scripts. This set includes common configuration variables, such as proxy settings ( HTTP_PROXY ), cloud credentials ( AWS_ACCESS_KEY_ID , AZURE_CLIENT_ID ), and catalog variables ( CATALOG ). Other variables that you set on a cluster remain available to your user code, including UDFs, but are not available to the Spark engine or init scripts. Previously, all cluster environment variables were",
-      "published": "2026-06-26T00:00:00+00:00",
-      "category": "General",
+      "id": "cf47a15ca61a",
+      "title": "Solution Accelerators in Databricks Marketplace are now published as apps or notebooks",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#solution-accelerators-in-databricks-marketplace-are-now-published-as-apps-or-notebooks",
+      "summary": "Solution Accelerators are no longer a separate listing type in Databricks Marketplace. The content is unchanged, but they are now categorized as apps (interactive applications) or notebooks (code-based accelerators). See What is Databricks Marketplace? .",
+      "published": "2026-06-25T00:00:00+00:00",
+      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -2161,15 +2206,6 @@
       "summary": "Dynamic annotation lines : Annotation lines can now be driven by data or a calculation instead of a fixed value, letting you show running averages, variable thresholds, or anomaly markers that update with your data. See Annotations . Six new preset themes : Six new built-in color and style themes are now available for AI/BI dashboards, giving authors more ready-made options without creating a custom theme. See Choose a preset theme . Local metric view and dashboard relationship fix : Fixed a bug where local metric views and dashboard relationships sometimes failed when referencing assets from ",
       "published": "2026-06-25T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "cf47a15ca61a",
-      "title": "Solution Accelerators in Databricks Marketplace are now published as apps or notebooks",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#solution-accelerators-in-databricks-marketplace-are-now-published-as-apps-or-notebooks",
-      "summary": "Solution Accelerators are no longer a separate listing type in Databricks Marketplace. The content is unchanged, but they are now categorized as apps (interactive applications) or notebooks (code-based accelerators). See What is Databricks Marketplace? .",
-      "published": "2026-06-25T00:00:00+00:00",
-      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -2290,24 +2326,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "980cf429b951",
-      "title": "Genie One enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-7",
-      "summary": "Scheduled tasks for consumer entitlement users : Consumer entitlement users can now create scheduled tasks without needing the SQL entitlement. See Scheduled tasks .",
-      "published": "2026-06-18T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "b398c4e96ed2",
-      "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements",
-      "summary": "Table header color customization : Authors can now set font color, background color, and text formatting for table column headers. See Table layout settings . Dashboard relationships (Private Preview) : Dashboard relationships, which allow users to create complex multi-fact data models, are now in Private Preview. See Dashboard relationships . Local metric view parameters : Local metric views now support parameters, allowing Databricks to dynamically change query inputs based on user selections in a UI. See Local metric views . Local metric view wildcard expressions : Local metric views now su",
-      "published": "2026-06-18T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "ab84ded6ad16",
       "title": "Salesforce Marketing Cloud managed ingestion connector (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#salesforce-marketing-cloud-managed-ingestion-connector-beta",
@@ -2323,6 +2341,24 @@
       "summary": "The Workday Reports connector in Lakeflow Connect now supports incremental ingestion in Beta . If you configure a cursor column for a report, the connector ingests only the rows that have changed since the last pipeline run, improving performance and reducing costs. See Ingest Workday reports incrementally .",
       "published": "2026-06-18T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "980cf429b951",
+      "title": "Genie One enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-7",
+      "summary": "Scheduled tasks for consumer entitlement users : Consumer entitlement users can now create scheduled tasks without needing the SQL entitlement. See Scheduled tasks .",
+      "published": "2026-06-18T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "b398c4e96ed2",
+      "title": "Dashboard enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements",
+      "summary": "Table header color customization : Authors can now set font color, background color, and text formatting for table column headers. See Table layout settings . Dashboard relationships (Private Preview) : Dashboard relationships, which allow users to create complex multi-fact data models, are now in Private Preview. See Dashboard relationships . Local metric view parameters : Local metric views now support parameters, allowing Databricks to dynamically change query inputs based on user selections in a UI. See Local metric views . Local metric view wildcard expressions : Local metric views now su",
+      "published": "2026-06-18T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -2416,21 +2452,12 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "39fe1bc58506",
-      "title": "Genie mobile app (Public Preview)",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-mobile-app-public-preview",
-      "summary": "You can now use the Databricks Genie mobile app to access Genie One from iOS and Android devices. Download the app from the Apple App Store or Google Play Store. Using the Genie mobile app, you can: Ask data questions in natural language. View and interact with AI/BI dashboards, optimized for mobile. Chat with dashboards using dashboard-embedded Genie. Discover and run Databricks Apps. See Use Genie on mobile .",
+      "id": "3540bfbaebc7",
+      "title": "Databricks Runtime 19 (Beta): June 15, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-15-2026",
+      "summary": "Databricks Runtime 19 is now available in Beta, powered by Apache Spark 4.2.0. Behavioral changes JDK 17 removed : Databricks Runtime 19 only supports JDK 21. Previously, Databricks Runtime 18 included JDK 17 as a fallback option that could be selected using the JNAME environment variable. That fallback is no longer available in Databricks Runtime 19. Clusters that set JNAME=zulu17-ca-amd64 (or the ARM equivalent) must remove that environment variable before upgrading. Python packages removed : Compared to Databricks Runtime 18, approximately 90 standard runtime packages are removed in Databri",
       "published": "2026-06-15T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "282816f79a88",
-      "title": "Genie One enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-8",
-      "summary": "Chat in Genie One : Chat in Genie One is now generally available. Chat provides a unified interface for asking data questions in natural language using your Genie Agents (formerly Genie Spaces), dashboards, queries, and metric views. See Chat in Genie One . Documents in Genie One : Creating and sharing documents from Genie One chat conversations is now generally available. Ask Genie One to draft a document, or click Draft a document from the homepage. Genie One generates the document and opens it in a canvas pane alongside the conversation, where you can edit and share it. See Documents in Gen",
-      "published": "2026-06-15T00:00:00+00:00",
-      "category": "AI/BI",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -2515,12 +2542,21 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "3540bfbaebc7",
-      "title": "Databricks Runtime 19 (Beta): June 15, 2026",
-      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-15-2026",
-      "summary": "Databricks Runtime 19 is now available in Beta, powered by Apache Spark 4.2.0. Behavioral changes JDK 17 removed : Databricks Runtime 19 only supports JDK 21. Previously, Databricks Runtime 18 included JDK 17 as a fallback option that could be selected using the JNAME environment variable. That fallback is no longer available in Databricks Runtime 19. Clusters that set JNAME=zulu17-ca-amd64 (or the ARM equivalent) must remove that environment variable before upgrading. Python packages removed : Compared to Databricks Runtime 18, approximately 90 standard runtime packages are removed in Databri",
+      "id": "39fe1bc58506",
+      "title": "Genie mobile app (Public Preview)",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-mobile-app-public-preview",
+      "summary": "You can now use the Databricks Genie mobile app to access Genie One from iOS and Android devices. Download the app from the Apple App Store or Google Play Store. Using the Genie mobile app, you can: Ask data questions in natural language. View and interact with AI/BI dashboards, optimized for mobile. Chat with dashboards using dashboard-embedded Genie. Discover and run Databricks Apps. See Use Genie on mobile .",
       "published": "2026-06-15T00:00:00+00:00",
-      "category": "General",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "282816f79a88",
+      "title": "Genie One enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-8",
+      "summary": "Chat in Genie One : Chat in Genie One is now generally available. Chat provides a unified interface for asking data questions in natural language using your Genie Agents (formerly Genie Spaces), dashboards, queries, and metric views. See Chat in Genie One . Documents in Genie One : Creating and sharing documents from Genie One chat conversations is now generally available. Ask Genie One to draft a document, or click Draft a document from the homepage. Genie One generates the document and opens it in a canvas pane alongside the conversation, where you can edit and share it. See Documents in Gen",
+      "published": "2026-06-15T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -2587,33 +2623,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "7687c7cdbb6a",
-      "title": "Dashboard enhancements and bug fixes",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes-10",
-      "summary": "Gantt charts now available : Gantt charts display tasks as horizontal bars on a continuous axis to visualize project schedules, manufacturing workflows, and other time-ranged events. Each bar requires matching start and end field types (date, datetime, or numeric). See Gantt chart . Custom visualizations (Public Preview) : Build custom charts with the Vega-Lite library for customization beyond the built-in visualization types. See Custom visualizations in AI/BI dashboards . Per-category font customization : You can now customize fonts per category across all visualization types. See Customize ",
-      "published": "2026-06-11T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "5614597ab0e6",
-      "title": "Genie Agent (formerly Genie Space) enhancements and bug fixes",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agent-formerly-genie-space-enhancements-and-bug-fixes",
-      "summary": "Save visualizations to a dashboard : You can now save Genie Agent (formerly Genie Space) visualization outputs to a dashboard. See Save a visualization to a dashboard . Reference previous visualizations : Select and reference visualizations from previous prompts in follow-up prompts. Genie Code for metric view export : Use Genie Code when exporting metric views from a Genie Agent (formerly Genie Space) to refine the metric view definition. See Export a Genie Agent as a metric view . Common question prioritization fix : Author-defined common questions now take priority on the new chat page. Aut",
-      "published": "2026-06-11T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "bc5ca32cc50a",
-      "title": "Genie One enhancements and bug fixes",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-and-bug-fixes-2",
-      "summary": "Account-level Genie customization : You can now customize Genie at the account level, including colors, a logo, a markdown welcome message, and pinned content. See Customize the Genie One homepage . Email tool for scheduled tasks : Scheduled tasks now use an email tool to send emails, enabling more customized email formats and send conditions. See Scheduled tasks . Custom MCP server fix (Public Preview) : Fixed an issue that prevented custom MCP servers from being used in Genie One. See Custom MCP connection . Teams and Slack app integration : You can now use Genie One directly from Microsoft ",
-      "published": "2026-06-11T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "46d78a3019eb",
       "title": "Endpoint telemetry for custom model serving endpoints is generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#endpoint-telemetry-for-custom-model-serving-endpoints-is-generally-available",
@@ -2665,6 +2674,33 @@
       "summary": "You can now add Unity Catalog volumes as subagent tools in your Supervisor Agent. See Use Supervisor Agent to create a coordinated multi-agent system .",
       "published": "2026-06-11T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "7687c7cdbb6a",
+      "title": "Dashboard enhancements and bug fixes",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes-10",
+      "summary": "Gantt charts now available : Gantt charts display tasks as horizontal bars on a continuous axis to visualize project schedules, manufacturing workflows, and other time-ranged events. Each bar requires matching start and end field types (date, datetime, or numeric). See Gantt chart . Custom visualizations (Public Preview) : Build custom charts with the Vega-Lite library for customization beyond the built-in visualization types. See Custom visualizations in AI/BI dashboards . Per-category font customization : You can now customize fonts per category across all visualization types. See Customize ",
+      "published": "2026-06-11T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "5614597ab0e6",
+      "title": "Genie Agent (formerly Genie Space) enhancements and bug fixes",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agent-formerly-genie-space-enhancements-and-bug-fixes",
+      "summary": "Save visualizations to a dashboard : You can now save Genie Agent (formerly Genie Space) visualization outputs to a dashboard. See Save a visualization to a dashboard . Reference previous visualizations : Select and reference visualizations from previous prompts in follow-up prompts. Genie Code for metric view export : Use Genie Code when exporting metric views from a Genie Agent (formerly Genie Space) to refine the metric view definition. See Export a Genie Agent as a metric view . Common question prioritization fix : Author-defined common questions now take priority on the new chat page. Aut",
+      "published": "2026-06-11T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "bc5ca32cc50a",
+      "title": "Genie One enhancements and bug fixes",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-and-bug-fixes-2",
+      "summary": "Account-level Genie customization : You can now customize Genie at the account level, including colors, a logo, a markdown welcome message, and pinned content. See Customize the Genie One homepage . Email tool for scheduled tasks : Scheduled tasks now use an email tool to send emails, enabling more customized email formats and send conditions. See Scheduled tasks . Custom MCP server fix (Public Preview) : Fixed an issue that prevented custom MCP servers from being used in Genie One. See Custom MCP connection . Teams and Slack app integration : You can now use Genie One directly from Microsoft ",
+      "published": "2026-06-11T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -2722,15 +2758,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "5d2885c7727e",
-      "title": "Genie renamed to Genie One",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-renamed-to-genie-one",
-      "summary": "Genie, the Databricks AI experience for business users, has been renamed to Genie One. The feature and its capabilities are unchanged. See Use Genie One .",
-      "published": "2026-06-09T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "5f3988027707",
       "title": "Automatic identity management for Okta (Public Preview)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#automatic-identity-management-for-okta-public-preview",
@@ -2782,6 +2809,15 @@
       "summary": "The Spark Declarative Pipelines on Lakeflow documentation is reorganized: all conceptual topics are now grouped under Concepts .",
       "published": "2026-06-09T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "5d2885c7727e",
+      "title": "Genie renamed to Genie One",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-renamed-to-genie-one",
+      "summary": "Genie, the Databricks AI experience for business users, has been renamed to Genie One. The feature and its capabilities are unchanged. See Use Genie One .",
+      "published": "2026-06-09T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -2902,33 +2938,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "f0e9f5192a72",
-      "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-1",
-      "summary": "Bookmark filter combinations : Dashboard authors can now save filter combinations as shared bookmarks, which viewers can quickly apply. See Bookmarks . Pivot table column improvements : Pivot table columns can now expand and collapse. See Pivot table configuration . Theme customization enhancements : New theme customization options are now available, including the ability to change axis and grid line colors, adjust widget layout (margin, padding, corner radius, and shadow), and apply a color ramp. See Manage AI/BI dashboard workspace themes . Workspace theme settings : New theme settings are n",
-      "published": "2026-06-04T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "4dae453eb9b3",
-      "title": "Genie Agent (formerly Genie Space) enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agent-formerly-genie-space-enhancements-2",
-      "summary": "Genie Chat prompt monitoring (Beta) : Prompts and responses initiated by Genie Chat are now visible in Genie Agents (formerly Genie Spaces) monitoring when the sharing Beta is enabled. See Test and monitor a Genie Agent . Knowledge store edit confirmation dialog : A confirmation dialog now appears before an author removes a table that has knowledge store edits (for example, local table or column descriptions or hidden columns). See Manage knowledge store metadata . Delete conversations : Users with CAN MANAGE permission can now delete the conversations of other users from the UI, matching exis",
-      "published": "2026-06-04T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "814b1a90ad74",
-      "title": "Genie One enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-9",
-      "summary": "Workspace-level Genie One customization : Workspace admins can now customize Genie One at the workspace level. Under workspace settings, admins can configure colors, a logo, a markdown welcome message, and pinned content. See Customize the Genie One homepage . Certified object prioritization : Chat in Genie One now acknowledges and prioritizes certified objects. User skills (Public Preview) : You can now create personal user skills to extend chat in Genie One with custom capabilities. A skill is a repeatable task you teach Genie One once and run whenever you need it, such as building your week",
-      "published": "2026-06-04T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "be94c60543bb",
       "title": "Improved workspace file write performance on classic compute",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#improved-workspace-file-write-performance-on-classic-compute",
@@ -2962,6 +2971,33 @@
       "summary": "Genie Code now offers an auto-approve mode that approves tool actions, like running code or editing notebooks, without prompting you for each request. An AI classifier reviews each action and blocks risky ones. Auto-approve is a productivity feature, not a security boundary. Databricks recommends keeping it off when working with production data or shared resources. See Approve tool actions .",
       "published": "2026-06-04T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f0e9f5192a72",
+      "title": "Dashboard enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-1",
+      "summary": "Bookmark filter combinations : Dashboard authors can now save filter combinations as shared bookmarks, which viewers can quickly apply. See Bookmarks . Pivot table column improvements : Pivot table columns can now expand and collapse. See Pivot table configuration . Theme customization enhancements : New theme customization options are now available, including the ability to change axis and grid line colors, adjust widget layout (margin, padding, corner radius, and shadow), and apply a color ramp. See Manage AI/BI dashboard workspace themes . Workspace theme settings : New theme settings are n",
+      "published": "2026-06-04T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "4dae453eb9b3",
+      "title": "Genie Agent (formerly Genie Space) enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agent-formerly-genie-space-enhancements-2",
+      "summary": "Genie Chat prompt monitoring (Beta) : Prompts and responses initiated by Genie Chat are now visible in Genie Agents (formerly Genie Spaces) monitoring when the sharing Beta is enabled. See Test and monitor a Genie Agent . Knowledge store edit confirmation dialog : A confirmation dialog now appears before an author removes a table that has knowledge store edits (for example, local table or column descriptions or hidden columns). See Manage knowledge store metadata . Delete conversations : Users with CAN MANAGE permission can now delete the conversations of other users from the UI, matching exis",
+      "published": "2026-06-04T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "814b1a90ad74",
+      "title": "Genie One enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-enhancements-9",
+      "summary": "Workspace-level Genie One customization : Workspace admins can now customize Genie One at the workspace level. Under workspace settings, admins can configure colors, a logo, a markdown welcome message, and pinned content. See Customize the Genie One homepage . Certified object prioritization : Chat in Genie One now acknowledges and prioritizes certified objects. User skills (Public Preview) : You can now create personal user skills to extend chat in Genie One with custom capabilities. A skill is a repeatable task you teach Genie One once and run whenever you need it, such as building your week",
+      "published": "2026-06-04T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -3172,6 +3208,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "8a782ddeb990",
+      "title": "Databricks SQL version 2026.15 is now available in Preview",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202615-is-now-available-in-preview",
+      "summary": "Databricks SQL version 2026.15 is now available in the Preview channel. Review the following section to learn about new features, behavioral changes, and bug fixes. XPath no longer fetches external DTDs When you evaluate xpath over XML, Databricks no longer loads external Document Type Definitions (DTDs) declared in the document. Previously, XPath could fail when the XML contained an external DTD reference that pointed to a malformed URL or an unreachable endpoint. Because DTD validation is separate from XPath evaluation, queries that already succeeded return the same results as before. Querie",
+      "published": "2026-05-26T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "368f61c7324b",
       "title": "Removed legacy Assistant slash commands",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/may#removed-legacy-assistant-slash-commands",
@@ -3205,15 +3250,6 @@
       "summary": "New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see: Databricks Runtime 18.2 Databricks Runtime 18.1 Databricks Runtime 18.0 Databricks Runtime 17.3 LTS Databricks Runtime 16.4 LTS Databricks Runtime 15.4 LTS Databricks Runtime 14.3 LTS Databricks Runtime 13.3 LTS",
       "published": "2026-05-26T00:00:00+00:00",
       "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "8a782ddeb990",
-      "title": "Databricks SQL version 2026.15 is now available in Preview",
-      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202615-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.15 is now available in the Preview channel. Review the following section to learn about new features, behavioral changes, and bug fixes. XPath no longer fetches external DTDs When you evaluate xpath over XML, Databricks no longer loads external Document Type Definitions (DTDs) declared in the document. Previously, XPath could fail when the XML contained an external DTD reference that pointed to a malformed URL or an unreachable endpoint. Because DTD validation is separate from XPath evaluation, queries that already succeeded return the same results as before. Querie",
-      "published": "2026-05-26T00:00:00+00:00",
-      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -3802,6 +3838,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "ad0521f39263",
+      "title": "Native data profiling for results tables in the SQL editor",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#native-data-profiling-for-results-tables-in-the-sql-editor",
+      "summary": "You can now view profiling statistics for columns in results tables in the new Databricks SQL editor. Select column headers and click Open selection details to view profiling statistics.",
+      "published": "2026-05-01T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "b57cd0b586e5",
       "title": "Native data profiling for notebook results tables",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/may#native-data-profiling-for-notebook-results-tables",
@@ -3820,21 +3865,21 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "ad0521f39263",
-      "title": "Native data profiling for results tables in the SQL editor",
-      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#native-data-profiling-for-results-tables-in-the-sql-editor",
-      "summary": "You can now view profiling statistics for columns in results tables in the new Databricks SQL editor. Select column headers and click Open selection details to view profiling statistics.",
-      "published": "2026-05-01T00:00:00+00:00",
-      "category": "SQL",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "214f1a9d1cb1",
       "title": "Power BI connections will transition to ADBC",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#power-bi-connections-will-transition-to-adbc",
       "summary": "Power BI plans to transition all Power BI connections to Arrow Database Connectivity (ADBC). To avoid disruptions, Databricks recommends switching your development and staging semantic models to ADBC now and validating your workloads. For Microsoft's transition timeline, see Transition from ODBC to ADBC drivers . The ADBC driver for Power BI on Databricks has been in Public Preview since October 2025. Since February 2026, all new connections in Power BI Desktop and the Power BI service use ADBC by default. Existing connections continue to use ODBC unless you manually update them. See Configure",
       "published": "2026-04-30T00:00:00+00:00",
       "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "da865bfaecec",
+      "title": "agg SQL function as a synonym for measure",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#agg-sql-function-as-a-synonym-for-measure",
+      "summary": "The new agg aggregate function is a synonym for measure . Use agg(measure_column) as a shorter alternative when querying measures in a metric view .",
+      "published": "2026-04-30T00:00:00+00:00",
+      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -3862,15 +3907,6 @@
       "summary": "Weekly digest and monitoring : The Monitoring tab now includes a Weekly digest section showing weekly messages, users, and thumbs up/down feedback. Authors can also use Genie Code to summarize top usage trends and common issues from the monitoring page. PDF file uploads : Upload PDF files directly into a Genie Agent (formerly Genie Space) to analyze their content using natural language. See Upload a file to a Genie Agent .",
       "published": "2026-04-30T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "da865bfaecec",
-      "title": "agg SQL function as a synonym for measure",
-      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#agg-sql-function-as-a-synonym-for-measure",
-      "summary": "The new agg aggregate function is a synonym for measure . Use agg(measure_column) as a shorter alternative when querying measures in a metric view .",
-      "published": "2026-04-30T00:00:00+00:00",
-      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -4054,6 +4090,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "26f3086d8bbc",
+      "title": "Databricks SQL version 2026.10 is rolling out in Current",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202610-is-rolling-out-in-current",
+      "summary": "Databricks SQL version 2026.10 is rolling out to the Current channel. See features in 2026.10 .",
+      "published": "2026-04-23T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "b01ead5dc7f3",
       "title": "Dashboard enhancements and bug fixes",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-and-bug-fixes-16",
@@ -4078,15 +4123,6 @@
       "summary": "Genie Code space configuration : Genie Code now includes tools to configure your Genie Agent (formerly Genie Space). You can ask it to update instructions, example questions, descriptions, and more.",
       "published": "2026-04-23T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "26f3086d8bbc",
-      "title": "Databricks SQL version 2026.10 is rolling out in Current",
-      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202610-is-rolling-out-in-current",
-      "summary": "Databricks SQL version 2026.10 is rolling out to the Current channel. See features in 2026.10 .",
-      "published": "2026-04-23T00:00:00+00:00",
-      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -4621,6 +4657,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "1b08daba3929",
+      "title": "Databricks SQL version 2026.10 is now available in Preview",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202610-is-now-available-in-preview",
+      "summary": "Databricks SQL version 2026.10 is now available in the Preview channel. Review the following section to learn about new features, behavioral changes, and bug fixes. Observation metric errors no longer fail queries Errors during observation metric collection no longer cause query execution failures. Previously, errors in OBSERVE clauses (such as division by zero) could block or fail the entire query. Now, the query completes successfully and the error is raised when you call observation.get . Optimized writes for Unity Catalog CRTAS operations CREATE OR REPLACE TABLE AS SELECT (CRTAS) operation",
+      "published": "2026-03-26T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "bf85cf4d6b43",
       "title": "Genie Agent (formerly Genie Space) enhancements",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-agent-formerly-genie-space-enhancements-8",
@@ -4636,15 +4681,6 @@
       "summary": "Legacy dashboard color palette setting removed : The workspace setting for the legacy dashboard color palette has been removed, as legacy dashboards are no longer supported. AI/BI workspace-level color palettes remain available and unchanged. Genie Agent (formerly Genie Space) descriptions on dashboards : Authors can now add descriptions to Genie Agents (formerly Genie Spaces) embedded in dashboards. See Edit your dashboard's Genie Agent (formerly Genie Space) description . Collapsible visualization editor : The visualization editor is now collapsible when editing draft dashboards. Field comme",
       "published": "2026-03-26T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "1b08daba3929",
-      "title": "Databricks SQL version 2026.10 is now available in Preview",
-      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202610-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.10 is now available in the Preview channel. Review the following section to learn about new features, behavioral changes, and bug fixes. Observation metric errors no longer fail queries Errors during observation metric collection no longer cause query execution failures. Previously, errors in OBSERVE clauses (such as division by zero) could block or fail the entire query. Now, the query completes successfully and the error is raised when you call observation.get . Optimized writes for Unity Catalog CRTAS operations CREATE OR REPLACE TABLE AS SELECT (CRTAS) operation",
-      "published": "2026-03-26T00:00:00+00:00",
-      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -4810,21 +4846,21 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "2f4aa8859bcb",
-      "title": "Databricks Asset Bundles is now Declarative Automation Bundles",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-asset-bundles-is-now-declarative-automation-bundles",
-      "summary": "Databricks Asset Bundles has been renamed to Declarative Automation Bundles. See Why was Databricks Asset Bundles renamed to Declarative Automation Bundles? .",
-      "published": "2026-03-16T00:00:00+00:00",
-      "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "b7891cb7919a",
       "title": "Lakebase databases as Databricks Apps resources",
       "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-databases-as-databricks-apps-resources",
       "summary": "You can now add Lakebase databases as resources for your Databricks app. See Add a Lakebase resource to a Databricks app .",
       "published": "2026-03-16T00:00:00+00:00",
       "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "2f4aa8859bcb",
+      "title": "Databricks Asset Bundles is now Declarative Automation Bundles",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-asset-bundles-is-now-declarative-automation-bundles",
+      "summary": "Databricks Asset Bundles has been renamed to Declarative Automation Bundles. See Why was Databricks Asset Bundles renamed to Declarative Automation Bundles? .",
+      "published": "2026-03-16T00:00:00+00:00",
+      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -4909,15 +4945,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "c1fde388562a",
-      "title": "Data quality monitoring documentation moved to Data governance (Unity Catalog)",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#data-quality-monitoring-documentation-moved-to-data-governance-unity-catalog",
-      "summary": "The Data quality monitoring documentation has moved from Data guides to the Data governance (Unity Catalog) chapter.",
-      "published": "2026-03-12T00:00:00+00:00",
-      "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "9226856a4ebd",
       "title": "Lakebase updates: OAuth role management, budget policies and tags, and Lakehouse sync",
       "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-updates-oauth-role-management-budget-policies-and-tags-and-lakehouse-sync",
@@ -4933,6 +4960,24 @@
       "summary": "New Lakebase instances are now created with autoscaling compute, scale-to-zero, branching, and instant restore by default. This applies when you create instances using the UI, Database instance API, Terraform, or SDKs. See Autoscaling .",
       "published": "2026-03-12T00:00:00+00:00",
       "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "c1fde388562a",
+      "title": "Data quality monitoring documentation moved to Data governance (Unity Catalog)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#data-quality-monitoring-documentation-moved-to-data-governance-unity-catalog",
+      "summary": "The Data quality monitoring documentation has moved from Data guides to the Data governance (Unity Catalog) chapter.",
+      "published": "2026-03-12T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d6e62bfa23bd",
+      "title": "Databricks Runtime 18: March 11, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/18#databricks-runtime-18-march-11-2026",
+      "summary": "Behavioral changes Review the following changes, which take effect when clusters restart on this runtime. Observation metric errors : No longer cause query execution failures. Previously, errors in OBSERVE clauses (such as division by zero) could block or fail the entire query. Now, the query completes successfully and the error is raised when you call observation.get . FILTER clause for MEASURE : MEASURE aggregate functions now support FILTER clauses . Previously, filters were silently ignored. DESCRIBE FLOW : The DESCRIBE FLOW command is now available. If you have a table named flow , use DE",
+      "published": "2026-03-11T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -4963,11 +5008,11 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "d6e62bfa23bd",
-      "title": "Databricks Runtime 18: March 11, 2026",
-      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/18#databricks-runtime-18-march-11-2026",
-      "summary": "Behavioral changes Review the following changes, which take effect when clusters restart on this runtime. Observation metric errors : No longer cause query execution failures. Previously, errors in OBSERVE clauses (such as division by zero) could block or fail the entire query. Now, the query completes successfully and the error is raised when you call observation.get . FILTER clause for MEASURE : MEASURE aggregate functions now support FILTER clauses . Previously, filters were silently ignored. DESCRIBE FLOW : The DESCRIBE FLOW command is now available. If you have a table named flow , use DE",
-      "published": "2026-03-11T00:00:00+00:00",
+      "id": "8c46e7b8c74f",
+      "title": "Databricks Runtime 18: March 10, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/18#databricks-runtime-18-march-10-2026",
+      "summary": "Error messages for scalar subqueries used with EXEC IMMEDIATE now identify the specific cause more clearly. Fixed a race condition in streaming checkpoint log compaction that could cause non-deterministic behavior in Structured Streaming queries. [Security fix] Operating system security updates.",
+      "published": "2026-03-10T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
     },
@@ -4978,15 +5023,6 @@
       "summary": "New maintenance updates are available for supported Databricks Runtime versions. These updates include bug fixes, security patches, and performance improvements. For details, see: Databricks Runtime 18.0 Databricks Runtime 17.3 LTS Databricks Runtime 17.2 Databricks Runtime 16.4 LTS Databricks Runtime 15.4 LTS Databricks Runtime 14.3 LTS Databricks Runtime 13.3 LTS",
       "published": "2026-03-10T00:00:00+00:00",
       "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "8c46e7b8c74f",
-      "title": "Databricks Runtime 18: March 10, 2026",
-      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/18#databricks-runtime-18-march-10-2026",
-      "summary": "Error messages for scalar subqueries used with EXEC IMMEDIATE now identify the specific cause more clearly. Fixed a race condition in streaming checkpoint log compaction that could cause non-deterministic behavior in Structured Streaming queries. [Security fix] Operating system security updates.",
-      "published": "2026-03-10T00:00:00+00:00",
-      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -5134,6 +5170,24 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "b0b3cab1c438",
+      "title": "Lakebase now includes high availability",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-includes-high-availability",
+      "summary": "Lakebase now includes high availability. High availability provides automatic failover from your primary compute instance to secondary compute instances distributed across availability zones, with no connection string changes required. See High availability .",
+      "published": "2026-03-02T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f374c9ca67ba",
+      "title": "Lakebase now available in three additional regions",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-available-in-three-additional-regions",
+      "summary": "Lakebase is now available in three additional regions: ca-central-1 (Canada Central) eu-west-2 (Europe – London) sa-east-1 (South America – São Paulo) See Get started with Lakebase .",
+      "published": "2026-03-02T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "2736eb0c5250",
       "title": "Managed OAuth flows for external MCP servers",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#managed-oauth-flows-for-external-mcp-servers",
@@ -5176,24 +5230,6 @@
       "summary": "The new Databricks Excel Add-in is in Public Preview and allows you to connect Microsoft Excel to your workspace, import data from tables or Metric Views, execute SQL queries, and analyze data directly in Excel. See Connect to Databricks from Microsoft Excel .",
       "published": "2026-03-02T00:00:00+00:00",
       "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "b0b3cab1c438",
-      "title": "Lakebase now includes high availability",
-      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-includes-high-availability",
-      "summary": "Lakebase now includes high availability. High availability provides automatic failover from your primary compute instance to secondary compute instances distributed across availability zones, with no connection string changes required. See High availability .",
-      "published": "2026-03-02T00:00:00+00:00",
-      "category": "Lakebase",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "f374c9ca67ba",
-      "title": "Lakebase now available in three additional regions",
-      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-available-in-three-additional-regions",
-      "summary": "Lakebase is now available in three additional regions: ca-central-1 (Canada Central) eu-west-2 (Europe – London) sa-east-1 (South America – São Paulo) See Get started with Lakebase .",
-      "published": "2026-03-02T00:00:00+00:00",
-      "category": "Lakebase",
       "domain": "docs.databricks.com"
     },
     {
@@ -7000,7 +7036,7 @@
       "id": "43f53e100b54",
       "title": "Gemini 2.5 Pro and Flash models now supported on pay-per-token endpoints",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/october#gemini-25-pro-and-flash-models-now-supported-on-pay-per-token-endpoints",
-      "summary": "Model Serving now supports the Google Gemini 2.5 Pro and Gemini 2.5 Flash models. You can access these models using Foundation Model APIs pay-per-token and they also support Function calling and Structured output . See Query reasoning models . See Enrich data using AI Functions for guidance on how to use the Gemini 2.5 models for batch inference.",
+      "summary": "Model Serving now supports the Google Gemini 2.5 Pro and Gemini 2.5 Flash models. You can access these models using Foundation Model APIs pay-per-token and they also support Function calling and Structured output . See Query reasoning models . See Transform unstructured data using AI Functions for guidance on how to use the Gemini 2.5 models for batch inference.",
       "published": "2025-10-28T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -7387,7 +7423,7 @@
       "id": "f744e75868ba",
       "title": "Anthropic Claude Sonnet 4 is available for batch inference in US regions",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/october#anthropic-claude-sonnet-4-is-available-for-batch-inference-in-us-regions",
-      "summary": "Mosaic AI Model Serving now supports Anthropic Claude Sonnet 4 for batch inference workflows. You can now use databricks-claude-sonnet-4 in your ai_query requests to perform batch inference. See Enrich data using AI Functions for an example. See Supported foundation models on Model Serving for region availability.",
+      "summary": "Mosaic AI Model Serving now supports Anthropic Claude Sonnet 4 for batch inference workflows. You can now use databricks-claude-sonnet-4 in your ai_query requests to perform batch inference. See Transform unstructured data using AI Functions for an example. See Supported foundation models on Model Serving for region availability.",
       "published": "2025-10-03T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -7852,24 +7888,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "9f2bcfdfae07",
-      "title": "Dashboard external embedding Public Preview and new custom calculations functions",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-external-embedding-public-preview-and-new-custom-calculations-functions",
-      "summary": "Custom calculation functions : Support added for ln , log , log10 , and round functions. See What are custom calculations? . Custom calculations limit increase : You can now define up to 200 custom calculations per dataset. Embedding for external users in Public Preview : Embedding dashboards for external users is now available in Public Preview. See Embedding for external users . Multi-y charts with apostrophes in column names : Labels now render correctly when column names include apostrophes. Custom tooltips for pie charts : Pie charts now support custom tooltips. Fixed page and dataset ren",
-      "published": "2025-08-28T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "f80c572fe984",
-      "title": "Genie follow-up questions and fixes",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-follow-up-questions-and-fixes",
-      "summary": "Fixed cloning issue for large spaces : Spaces with a large number of instructions can now be cloned successfully. Fixed CSV download issue on Windows : Downloaded query result files now open reliably on Windows.",
-      "published": "2025-08-28T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "4c132149b30a",
       "title": "Track and navigate notebook runs with the new cell execution minimap",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/august#track-and-navigate-notebook-runs-with-the-new-cell-execution-minimap",
@@ -7912,6 +7930,24 @@
       "summary": "Spark Declarative Pipelines on Lakeflow has a legacy publishing mode that only allowed publishing to a single catalog and schema. The default publishing mode enables publishing to multiple catalogs and schemas. Migration from the legacy publishing mode to the default publishing mode is now generally available. See Enable the default publishing mode in a pipeline",
       "published": "2025-08-28T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "9f2bcfdfae07",
+      "title": "Dashboard external embedding Public Preview and new custom calculations functions",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-external-embedding-public-preview-and-new-custom-calculations-functions",
+      "summary": "Custom calculation functions : Support added for ln , log , log10 , and round functions. See What are custom calculations? . Custom calculations limit increase : You can now define up to 200 custom calculations per dataset. Embedding for external users in Public Preview : Embedding dashboards for external users is now available in Public Preview. See Embedding for external users . Multi-y charts with apostrophes in column names : Labels now render correctly when column names include apostrophes. Custom tooltips for pie charts : Pie charts now support custom tooltips. Fixed page and dataset ren",
+      "published": "2025-08-28T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f80c572fe984",
+      "title": "Genie follow-up questions and fixes",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-follow-up-questions-and-fixes",
+      "summary": "Fixed cloning issue for large spaces : Spaces with a large number of instructions can now be cloned successfully. Fixed CSV download issue on Windows : Downloaded query result files now open reliably on Windows.",
+      "published": "2025-08-28T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -8032,24 +8068,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "7df4e9c0d05e",
-      "title": "Dashboard sorting and formatting improvements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-sorting-and-formatting-improvements",
-      "summary": "Fixed sorting on temporal categorical axes : Resolved an issue where sorting did not work correctly on temporal categorical axes. Numeric formatting as Bytes : Users can now format numeric values as Bytes. Totals in histogram tooltips : Histograms now display totals in tooltips. Axis gridlines respect custom background colors : Gridlines now automatically update based on custom color palette selections for background color.",
-      "published": "2025-08-21T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "4792bd4e0378",
-      "title": "Genie SQL validation and space management",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-sql-validation-and-space-management",
-      "summary": "SQL expression validation for join relationships : Added validation logic to help authors write correct SQL join relationships. If a join statement contains errors, the validation logic flags them. Fixed cloning issue for spaces : Resolved a bug where cloned spaces did not correctly copy over the associated tables.",
-      "published": "2025-08-21T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "22eb39684d90",
       "title": "Declarative Automation Bundles support for Lakebase database resources",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/august#declarative-automation-bundles-support-for-lakebase-database-resources",
@@ -8065,6 +8083,24 @@
       "summary": "Users can now chat with Databricks Assistant on some compute pages. Use the Assistant chat panel to help you create a new compute resource, pool, and policy. Or, ask the Assistant questions about the compute resource, like “Is this compute resource Unity Catalog-enabled?” or “What’s the current compute policy?” To learn more about chatting with the Assitant, see Tour of the Genie Code pane . To learn more about compute resources, see Compute .",
       "published": "2025-08-21T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "7df4e9c0d05e",
+      "title": "Dashboard sorting and formatting improvements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-sorting-and-formatting-improvements",
+      "summary": "Fixed sorting on temporal categorical axes : Resolved an issue where sorting did not work correctly on temporal categorical axes. Numeric formatting as Bytes : Users can now format numeric values as Bytes. Totals in histogram tooltips : Histograms now display totals in tooltips. Axis gridlines respect custom background colors : Gridlines now automatically update based on custom color palette selections for background color.",
+      "published": "2025-08-21T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "4792bd4e0378",
+      "title": "Genie SQL validation and space management",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-sql-validation-and-space-management",
+      "summary": "SQL expression validation for join relationships : Added validation logic to help authors write correct SQL join relationships. If a join statement contains errors, the validation logic flags them. Fixed cloning issue for spaces : Resolved a bug where cloned spaces did not correctly copy over the associated tables.",
+      "published": "2025-08-21T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -8104,24 +8140,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "f8124d7eb6cf",
-      "title": "Dashboard table visualization and chart improvements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-table-visualization-and-chart-improvements",
-      "summary": "Indicator for calculated measures in table editor : Added an indicator in the table visualization editor to show when calculated measures are not displayed in the table. Fixed transparent headers in light mode : Resolved a bug where table visualization headers appeared transparent in light mode. Fixed pivot table column width retention : Resolved an issue where custom column widths in pivot table visualizations were not retained after subsequent edits. Measure fields appear before dimension fields : In the visualization field picker, measure fields now appear before dimension fields. Funnel ch",
-      "published": "2025-08-14T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "d5cc91dd6087",
-      "title": "Genie interface and file upload enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-interface-and-file-upload-enhancements",
-      "summary": "Fixed off-screen color ramp editor in Genie : Resolved a bug where the color ramp editor was hidden off-screen. Improved file upload security and setup in Genie : File uploads are now accessible only to the users who uploaded them. Setup is simplified to automatically designate the catalog and schema where the file is stored. See Upload a file to a Genie Agent .",
-      "published": "2025-08-14T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "ff23fb0e16e2",
       "title": "Spark Declarative Pipelines on Lakeflow template in bundles in the workspace (Public Preview)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/august#spark-declarative-pipelines-on-lakeflow-template-in-bundles-in-the-workspace-public-preview",
@@ -8146,6 +8164,24 @@
       "summary": "Databricks Assistant with Databricks-hosted models is now generally available on all cloud platforms. This version of the Assistant is fully powered by models hosted and served directly on Databricks infrastructure — at no additional cost to customers. See Databricks-hosted models for AI-powered features .",
       "published": "2025-08-14T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f8124d7eb6cf",
+      "title": "Dashboard table visualization and chart improvements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-table-visualization-and-chart-improvements",
+      "summary": "Indicator for calculated measures in table editor : Added an indicator in the table visualization editor to show when calculated measures are not displayed in the table. Fixed transparent headers in light mode : Resolved a bug where table visualization headers appeared transparent in light mode. Fixed pivot table column width retention : Resolved an issue where custom column widths in pivot table visualizations were not retained after subsequent edits. Measure fields appear before dimension fields : In the visualization field picker, measure fields now appear before dimension fields. Funnel ch",
+      "published": "2025-08-14T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d5cc91dd6087",
+      "title": "Genie interface and file upload enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#genie-interface-and-file-upload-enhancements",
+      "summary": "Fixed off-screen color ramp editor in Genie : Resolved a bug where the color ramp editor was hidden off-screen. Improved file upload security and setup in Genie : File uploads are now accessible only to the users who uploaded them. Setup is simplified to automatically designate the catalog and schema where the file is stored. See Upload a file to a Genie Agent .",
+      "published": "2025-08-14T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -8356,6 +8392,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "8d0c5b057cfc",
+      "title": "PrivateLink connections from serverless compute to resources in your VPC through an NLB is generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/august#privatelink-connections-from-serverless-compute-to-resources-in-your-vpc-through-an-nlb-is-generally-available",
+      "summary": "You can now enable AWS PrivateLink to resources in your VPC (virtual private cloud) through an NLB (network load balancer) from serverless compute. See Configure private connectivity to resources in your VPC .",
+      "published": "2025-08-04T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "7f63ab2543c0",
       "title": "Dashboard theme improvements",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-theme-improvements",
@@ -8371,15 +8416,6 @@
       "summary": "Local join relationships in Genie Agent (formerly Genie Space) knowledge stores : You can now define join relationships locally within a Genie Agent (formerly Genie Space)'s knowledge store. This is useful when authors lack permissions to define primary and foreign keys on upstream tables or when the join relationship has specific requirements, such as one-to-many or complex joins. See Add SQL examples and instructions . Fixed saving issue for example SQL statements : Resolved a bug where example SQL statements were not saving after clicking Save . Improved entity matching selection : Entity m",
       "published": "2025-08-04T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "8d0c5b057cfc",
-      "title": "PrivateLink connections from serverless compute to resources in your VPC through an NLB is generally available",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/august#privatelink-connections-from-serverless-compute-to-resources-in-your-vpc-through-an-nlb-is-generally-available",
-      "summary": "You can now enable AWS PrivateLink to resources in your VPC (virtual private cloud) through an NLB (network load balancer) from serverless compute. See Configure private connectivity to resources in your VPC .",
-      "published": "2025-08-04T00:00:00+00:00",
-      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -8869,6 +8905,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "8cb015eb4203",
+      "title": "New Databricks JDBC Driver is open source",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-databricks-jdbc-driver-is-open-source",
+      "summary": "The new Databricks JDBC Driver is now open source. The source code is publicly available under the Apache 2.0 license . Community contributions are welcome. See the Contribution Guidelines .",
+      "published": "2025-06-26T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "21604653c9a7",
       "title": "Dashboard Git integration and workflow improvements",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-git-integration-and-workflow-improvements",
@@ -8884,15 +8929,6 @@
       "summary": "New Genie API endpoints in Public Preview : You can now use the Genie API to list all conversations in a space, delete conversations, and delete Genie Agents (formerly Genie Spaces). See Genie in the REST API reference for details. More selective application of SQL functions in Genie : Genie's ability to apply SQL functions to relevant user questions has been improved.",
       "published": "2025-06-26T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "8cb015eb4203",
-      "title": "New Databricks JDBC Driver is open source",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-databricks-jdbc-driver-is-open-source",
-      "summary": "The new Databricks JDBC Driver is now open source. The source code is publicly available under the Apache 2.0 license . Community contributions are welcome. See the Contribution Guidelines .",
-      "published": "2025-06-26T00:00:00+00:00",
-      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -9031,15 +9067,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "716024a4d264",
-      "title": "Dashboard visualization fixes and schedule updates",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-fixes-and-schedule-updates",
-      "summary": "Dashboard visualization fixes : Tooltip field highlighting in combo charts fix : Tooltips shown as you hover over fields in combo charts are now correctly highlighted. Table collapse icon fix : Fixed an issue where expanding and collapsing long text in table cells did not work as expected. Drop-down menu rendering fix : Fixed an issue where some drop-down menus rendered incorrectly. Parameterized schedules temporarily disabled : Parameterized schedules have been temporarily disabled due to unexpected conflicts with some existing dashboard schedules.",
-      "published": "2025-06-12T00:00:00+00:00",
-      "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "08f2d8dbbe89",
       "title": "Attribute-based access control (ABAC) in Unity Catalog is in Beta",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#attribute-based-access-control-abac-in-unity-catalog-is-in-beta",
@@ -9058,10 +9085,19 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "716024a4d264",
+      "title": "Dashboard visualization fixes and schedule updates",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#dashboard-visualization-fixes-and-schedule-updates",
+      "summary": "Dashboard visualization fixes : Tooltip field highlighting in combo charts fix : Tooltips shown as you hover over fields in combo charts are now correctly highlighted. Table collapse icon fix : Fixed an issue where expanding and collapsing long text in table cells did not work as expected. Drop-down menu rendering fix : Fixed an issue where some drop-down menus rendered incorrectly. Parameterized schedules temporarily disabled : Parameterized schedules have been temporarily disabled due to unexpected conflicts with some existing dashboard schedules.",
+      "published": "2025-06-12T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "86cad0a6e7b0",
       "title": "Lakebase, a managed PostgreSQL OLTP database, is in Public Preview",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#lakebase-a-managed-postgresql-oltp-database-is-in-public-preview",
-      "summary": "Lakebase is an online transactional processing (OLTP) engine that is fully integrated with the Databricks Data Intelligence Platform. You can create a database instance, a new compute type, which provides dedicated, PostgreSQL-compatible storage and compute, enabling you to run transactional workloads alongside your Lakehouse data. See Lakebase Postgres .",
+      "summary": "Lakebase is an online transactional processing (OLTP) engine that is fully integrated with the Databricks Data + AI Platform. You can create a database instance, a new compute type, which provides dedicated, PostgreSQL-compatible storage and compute, enabling you to run transactional workloads alongside your Lakehouse data. See Lakebase Postgres .",
       "published": "2025-06-11T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -9256,6 +9292,24 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "d69644242789",
+      "title": "New consumer entitlement is generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-consumer-entitlement-is-generally-available",
+      "summary": "Workspace admins can now grant consumer access as an entitlement to users, service principals, and groups. This allows for more fine-grained control over what users can do in a Databricks workspace. Key details: Consumer access enables limited workspace UI access, querying SQL warehouses using BI tools, and viewing dashboards with embedded or viewer credentials. Useful for business users who need access to shared content and dashboards but not to author or manage workspace objects. This entitlement is more restrictive than workspace access or Databricks SQL access. To assign it independently, ",
+      "published": "2025-06-05T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "2a383a5dab3c",
+      "title": "New region: AWS Asia Pacific (Jakarta) (ap-southeast-3)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-region-aws-asia-pacific-jakarta-ap-southeast-3",
+      "summary": "Databricks is now available in the AWS Asia Pacific (Jakarta) region ( ap-southeast-3 ). Customers can now create new workspaces and use Databricks products in this region. This expansion allows organizations operating in or near Indonesia to deploy Databricks closer to their data and users, improving performance and meeting regional compliance requirements. For the full list of supported regions, see Databricks clouds and regions .",
+      "published": "2025-06-05T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "0c170d08a647",
       "title": "Consumer access entitlement is generally available",
       "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2025#consumer-access-entitlement-is-generally-available",
@@ -9280,24 +9334,6 @@
       "summary": "More entity matching in Genie : Genie can now support up to 60 entity matching (previously value dictionary) columns. See Tune Genie Agent quality . Genie Agent (formerly Genie Space) SQL editor fix : Resolved an issued that caused the SQL editor in a chat window disappear if the user deleted the generated query. You can now use the editor to delete and rewrite queries.",
       "published": "2025-06-05T00:00:00+00:00",
       "category": "AI/BI",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "d69644242789",
-      "title": "New consumer entitlement is generally available",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-consumer-entitlement-is-generally-available",
-      "summary": "Workspace admins can now grant consumer access as an entitlement to users, service principals, and groups. This allows for more fine-grained control over what users can do in a Databricks workspace. Key details: Consumer access enables limited workspace UI access, querying SQL warehouses using BI tools, and viewing dashboards with embedded or viewer credentials. Useful for business users who need access to shared content and dashboards but not to author or manage workspace objects. This entitlement is more restrictive than workspace access or Databricks SQL access. To assign it independently, ",
-      "published": "2025-06-05T00:00:00+00:00",
-      "category": "Platform",
-      "domain": "docs.databricks.com"
-    },
-    {
-      "id": "2a383a5dab3c",
-      "title": "New region: AWS Asia Pacific (Jakarta) (ap-southeast-3)",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/june#new-region-aws-asia-pacific-jakarta-ap-southeast-3",
-      "summary": "Databricks is now available in the AWS Asia Pacific (Jakarta) region ( ap-southeast-3 ). Customers can now create new workspaces and use Databricks products in this region. This expansion allows organizations operating in or near Indonesia to deploy Databricks closer to their data and users, improving performance and meeting regional compliance requirements. For the full list of supported regions, see Databricks clouds and regions .",
-      "published": "2025-06-05T00:00:00+00:00",
-      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
