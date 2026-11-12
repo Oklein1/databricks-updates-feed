@@ -1,8 +1,53 @@
 {
-  "generated_at": "2026-11-11T12:25:30.188684+00:00",
+  "generated_at": "2026-11-12T13:31:09.563129+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1541,
+  "count": 1549,
   "items": [
+    {
+      "id": "99142d0df48d",
+      "title": "Genie ZeroOps is available in Beta",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-zeroops-is-available-in-beta",
+      "summary": "Genie ZeroOps is now available in Beta . It monitors jobs, pipelines, and tables in the background, detects failures and data quality issues, investigates the root cause, and proposes a fix. See Get started with Genie ZeroOps .",
+      "published": "2026-11-12T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "128b0223c923",
+      "title": "Bring your own ChatGPT subscription to Codex with Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#bring-your-own-chatgpt-subscription-to-codex-with-unity-gateway",
+      "summary": "You can now use your own ChatGPT Go, Plus, Pro, or Enterprise subscription with Codex and ChatGPT desktop through Unity Gateway. Requests are billed to your subscription, and Unity Gateway governs access and usage. See ChatGPT subscription support .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "012121d88b50",
+      "title": "Connect ChatGPT to Genie One with the Databricks Genie plugin",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#connect-chatgpt-to-genie-one-with-the-databricks-genie-plugin",
+      "summary": "The Databricks Genie plugin connects ChatGPT to the Genie One MCP, so users can ask questions about their data from ChatGPT. A ChatGPT admin sets up the plugin for the ChatGPT workspace, and each user connects by signing in with their Databricks account. See Databricks Genie plugins for ChatGPT, Claude, and Grok Bot/Cursor .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "7e3e809f0ce8",
+      "title": "Connect Claude to Genie One with the Databricks Genie connector",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#connect-claude-to-genie-one-with-the-databricks-genie-connector",
+      "summary": "The Databricks Genie connector connects Claude to the Genie One MCP, so users can ask questions about their data from Claude. A Claude admin connects it for the team, and each user connects by signing in with their Databricks account. See Databricks Genie plugins for ChatGPT, Claude, and Grok Bot/Cursor .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "5e1be63e8f9c",
+      "title": "Connect Grok Bot/Cursor to Genie One with the Databricks Genie plugin",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#connect-grok-botcursor-to-genie-one-with-the-databricks-genie-plugin",
+      "summary": "The Databricks Genie plugin connects Grok Bot/Cursor to the Genie One MCP, so users can ask questions about their data from Grok Bot/Cursor. A Cursor team admin publishes the plugin for the team, and each user connects by signing in with their Databricks account. See Databricks Genie plugins for ChatGPT, Claude, and Grok Bot/Cursor .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
     {
       "id": "ccb8876ca3c1",
       "title": "Feature Views are now available by default for workspaces with the compliance security profile enabled",
@@ -28,6 +73,33 @@
       "summary": "The Genie One desktop app is now available for Windows in Beta , in addition to macOS. The native app opens Genie One on your desktop instead of in a browser tab, so business users can chat with data in natural language, work with their threads and documents, and use Genie Agents without a browser. See Windows .",
       "published": "2026-11-11T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "2f4dfebcbf10",
+      "title": "Write custom service policies in Python (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#write-custom-service-policies-in-python-beta",
+      "summary": "You can now write a custom service policy as a Python function in Unity Catalog. Use it for rules that SQL can't express, such as regular expressions, Python packages, or calls to an external guardrail through a service credential. It's available in select regions. See Write a custom Python service policy .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "3602f59c9fcd",
+      "title": "Bring your own ChatGPT subscription to Codex with Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#bring-your-own-chatgpt-subscription-to-codex-with-unity-gateway",
+      "summary": "You can now use your own ChatGPT Go, Plus, Pro, or Enterprise subscription with Codex and ChatGPT desktop through Unity Gateway. Requests are billed to your subscription, and Unity Gateway governs access and usage. See ChatGPT subscription support .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "136547d54ef0",
+      "title": "Write custom service policies in Python (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#write-custom-service-policies-in-python-beta",
+      "summary": "You can now write a custom service policy as a Python function in Unity Catalog. Use it for rules that SQL can't express, such as regular expressions, Python packages, or calls to an external guardrail through a service credential. It's available in select regions. See Write a custom Python service policy .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
