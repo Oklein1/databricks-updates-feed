@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T12:51:29.282644+00:00",
+  "generated_at": "2026-11-14T11:55:57.045798+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1570,
+  "count": 1574,
   "items": [
     {
       "id": "d4a3e9e46504",
@@ -10,6 +10,15 @@
       "summary": "Support for AI Function tasks in Declarative Automation Bundles is now in Beta . See AI Function task .",
       "published": "2026-11-13T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d1c32e0ccd75",
+      "title": "Importing Power BI and Tableau files with Genie Code will soon be available by default for workspaces with the compliance security profile enabled",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#importing-power-bi-and-tableau-files-with-genie-code-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
+      "summary": "You can use Genie Code to import Power BI and Tableau files as AI/BI dashboards and metric views. Starting on or after December 15, 2026, this will be available by default for workspaces with the compliance security profile enabled. Until then, a workspace admin can turn it on from Previews in the workspace settings. Importing requires partner-powered AI features for the account and workspace. See Import BI files using Genie Code .",
+      "published": "2026-11-13T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -76,10 +85,28 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "4bd29bad73b0",
+      "title": "Postgres 18.7, 17.12, and 16.16 now available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#postgres-187-1712-and-1616-now-available",
+      "summary": "Lakebase updated its supported Postgres versions to 18.7 , 17.12 , and 16.16 , less than 30 minutes after the PostgreSQL community released them . These minor releases include the latest upstream Postgres bug fixes and security patches. Lakebase applies a new minor version the next time your compute restarts. See Recent minor version rollouts .",
+      "published": "2026-11-12T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "fff4c4e524e0",
       "title": "ABAC DENY policies support AI securables and attachment to individual objects (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#abac-deny-policies-support-ai-securables-and-attachment-to-individual-objects-beta",
       "summary": "Expanded FOR clause support: DENY policies can now apply to model services, model provider services, MCP services, agent services, and skills. Expanded ON clause support: DENY policies can now be attached directly on tables, volumes, functions, models, secrets, model services, model provider services, MCP services, agent services, and skills. See Supported securable types and privileges .",
+      "published": "2026-11-12T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "97f935243ad3",
+      "title": "Flows are securable objects in Unity Catalog (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#flows-are-securable-objects-in-unity-catalog-beta",
+      "summary": "Pipeline flows are now securable objects in Unity Catalog. You can grant READ FLOW , REFRESH FLOW , WRITE FLOW , APPLY TAG , and MANAGE on individual flows, and CREATE FLOW on schemas. To participate in the Beta, contact your Databricks account team. See Flows in Unity Catalog .",
       "published": "2026-11-12T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -334,6 +361,24 @@
       "summary": "Starting on or after December 10, 2026, external access to Unity Catalog managed Delta tables will be available by default for eligible workspaces with the compliance security profile enabled. Supported external Delta clients can create, read, and write Unity Catalog managed Delta tables. Creating and writing managed Delta tables requires catalog commits . Metastore external data access settings and Unity Catalog privileges continue to control access. See Access Databricks tables from Delta clients .",
       "published": "2026-11-10T00:00:00+00:00",
       "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "aaea0b939c91",
+      "title": "Databricks SQL version 2026.45 is rolling out in Current",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202645-is-rolling-out-in-current",
+      "summary": "Databricks SQL version 2026.45 is rolling out to the Current channel. See features in 2026.45 .",
+      "published": "2026-11-10T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "37f462b64cfe",
+      "title": "Databricks SQL version 2026.46 is now available in Preview",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202646-is-now-available-in-preview",
+      "summary": "Databricks SQL version 2026.46 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "published": "2026-11-10T00:00:00+00:00",
+      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -628,7 +673,7 @@
       "id": "0ceefcef857f",
       "title": "Upcoming removal of AI Functions support on older runtimes",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#upcoming-removal-of-ai-functions-support-on-older-runtimes",
-      "summary": "Starting on January 15, 2027, calls in SQL queries to AI Functions that require Databricks Runtime 15.4 LTS or above are no longer supported on Databricks Runtime versions below 17.3 LTS. This change doesn't affect ai_forecast , ai_top_drivers , ai_detect_anomalies , ai_predict_class , ai_predict_value , vector_search , or the AI Functions REST API. To continue using affected AI Functions in SQL, use Databricks Runtime 17.3 LTS and above.",
+      "summary": "Starting on February 1, 2027, calls in SQL queries to AI Functions that require Databricks Runtime 15.4 LTS or above are no longer supported on Databricks Runtime versions below 17.3 LTS. This change doesn't affect ai_forecast , ai_top_drivers , ai_detect_anomalies , ai_predict_class , ai_predict_value , vector_search , or the AI Functions REST API. To continue using affected AI Functions in SQL, use Databricks Runtime 17.3 LTS and above.",
       "published": "2026-11-05T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -727,7 +772,7 @@
       "id": "0a51b0a2b303",
       "title": "AI Functions require Databricks Runtime 17.3 LTS or above",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#ai-functions-require-databricks-runtime-173-lts-or-above",
-      "summary": "Beginning on January 15, 2027, AI Functions that require Databricks Runtime 15.4 LTS or above require Databricks Runtime 17.3 LTS or above. Calls to these functions on Databricks Runtime versions below 17.3 are no longer supported and return an error. This change does not affect ai_forecast , ai_top_drivers , ai_detect_anomalies , ai_predict_class , ai_predict_value , vector_search , or the AI Functions REST API. Upgrade the compute that runs affected SQL queries to Databricks Runtime 17.3 LTS or above before support ends. See Transform unstructured data using AI Functions .",
+      "summary": "Beginning on February 1, 2027, AI Functions that require Databricks Runtime 15.4 LTS or above require Databricks Runtime 17.3 LTS or above. Calls to these functions on Databricks Runtime versions below 17.3 are no longer supported and return an error. This change does not affect ai_forecast , ai_top_drivers , ai_detect_anomalies , ai_predict_class , ai_predict_value , vector_search , or the AI Functions REST API. Upgrade the compute that runs affected SQL queries to Databricks Runtime 17.3 LTS or above before support ends. See Transform unstructured data using AI Functions .",
       "published": "2026-11-04T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -3379,15 +3424,6 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "c416b4371131",
-      "title": "Automatic change data feed will soon be available in all supported regions",
-      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#automatic-change-data-feed-will-soon-be-available-in-all-supported-regions",
-      "summary": "Automatic change data feed (Auto CDF) is rolling out to workspaces over the next month and will be available in all supported regions by the end of October 2026. Auto CDF computes row-level changes at query time using row tracking, so you don't need to enable change data feed on each Delta Lake or Apache Iceberg v3 table. It requires Databricks Runtime 19 or above with row tracking enabled. See Automatic change data feed .",
-      "published": "2026-09-15T00:00:00+00:00",
-      "category": "General",
-      "domain": "docs.databricks.com"
-    },
-    {
       "id": "804a8db05e9b",
       "title": "Webhook-triggered deployments for Databricks Apps will soon be generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#webhook-triggered-deployments-for-databricks-apps-will-soon-be-generally-available",
@@ -3823,7 +3859,7 @@
       "id": "6990650a29fe",
       "title": "Automatic change data feed is now generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/september#automatic-change-data-feed-is-now-generally-available",
-      "summary": "Automatic change data feed (Auto CDF) computes row-level changes at query time using row tracking, without requiring you to manually enable change data feed on each Delta Lake or Apache Iceberg v3 table. Auto CDF removes write-time overhead and makes MERGE and UPDATE operations about 15% faster on tables that you query for changes. It works with batch queries, Structured Streaming, and Delta Sharing, and requires Databricks Runtime 19 or above with row tracking enabled. See Automatic change data feed .",
+      "summary": "Automatic change data feed (Auto CDF) computes row-level changes at query time. It works with batch queries, Structured Streaming, and Delta Sharing, and requires Databricks Runtime 19 or above with row tracking enabled. See Automatic change data feed .",
       "published": "2026-09-01T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -3868,7 +3904,7 @@
       "id": "614295d53a49",
       "title": "Databricks Runtime 19: September 1, 2026",
       "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-september-1-2026",
-      "summary": "New features and improvements Automatic change data feed is generally available : Automatic change data feed (Auto CDF) computes row-level changes at query time using row tracking, without requiring you to manually enable change data feed on each Delta Lake or Apache Iceberg v3 table. Auto CDF removes write-time overhead and makes MERGE and UPDATE operations about 15% faster on tables that you query for changes. It works with batch queries, Structured Streaming, and Delta Sharing, and requires Databricks Runtime 19 or above with row tracking enabled. See Automatic change data feed . variant_st",
+      "summary": "New features and improvements Automatic change data feed is generally available : Automatic change data feed (Auto CDF) computes row-level changes at query time. It works with batch queries, Structured Streaming, and Delta Sharing, and requires Databricks Runtime 19 or above with row tracking enabled. See Automatic change data feed . variant_strip_nulls function : SQL and the Scala and Python DataFrame APIs now support variant_strip_nulls , which recursively removes object fields whose values are variant nulls. parse_sql function : The new parse_sql function parses a SQL statement and returns ",
       "published": "2026-09-01T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -3913,7 +3949,7 @@
       "id": "7377dd0a147d",
       "title": "August 31, 2026",
       "link": "https://docs.databricks.com/aws/en/release-notes/serverless#august-31-2026",
-      "summary": "This serverless compute release includes updates from Databricks Runtime 19 . New features Automatic change data feed is generally available : Automatic change data feed (Auto CDF) computes row-level changes at query time using row tracking, without requiring you to manually enable change data feed on each Delta Lake or Apache Iceberg v3 table. Auto CDF removes write-time overhead and typically makes MERGE and UPDATE operations about 15% faster on tables that you query for changes. It works with batch queries, Structured Streaming, and Delta Sharing, and requires row tracking. See Automatic ch",
+      "summary": "This serverless compute release includes updates from Databricks Runtime 19 . New features Automatic change data feed is generally available : Automatic change data feed (Auto CDF) computes row-level changes at query time. It works with batch queries, Structured Streaming, and Delta Sharing, and requires row tracking. See Automatic change data feed . parse_sql function : The parse_sql function parses a SQL statement and returns structured JSON containing statement metadata, table references, select-list expressions, or parser error information. Behavior changes from_protobuf skips malformed un",
       "published": "2026-08-31T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -3922,7 +3958,7 @@
       "id": "47a77887bdf0",
       "title": "Databricks SQL version 2026.36 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202636-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.36 is now available in the Preview channel. Review the following section to learn about new features and behavioral changes. Automatic change data feed is generally available Automatic change data feed (Auto CDF) computes row-level changes at query time using row tracking, so you don't need to manually enable change data feed on each Delta Lake or Apache Iceberg v3 table. Auto CDF removes write-time overhead and makes MERGE and UPDATE operations about 15% faster on tables that you query for changes. Row tracking must be enabled on the table. See Automatic change dat",
+      "summary": "Databricks SQL version 2026.36 is now available in the Preview channel. Review the following section to learn about new features and behavioral changes. Automatic change data feed is generally available Automatic change data feed (Auto CDF) computes row-level changes at query time. Row tracking must be enabled on the table. See Automatic change data feed . Parse SQL statements with parse_sql The parse_sql function parses a SQL statement and returns structured JSON that contains statement metadata, table references, select-list expressions, or parser error information. from_protobuf skips malfo",
       "published": "2026-08-31T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -4201,7 +4237,7 @@
       "id": "bc5660a95919",
       "title": "Postgres minor version updates",
       "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#postgres-minor-version-updates",
-      "summary": "Lakebase updated its supported Postgres versions to 16.15, 17.11, and 18.6. These minor releases bring you the latest upstream Postgres fixes and security patches. When a new minor version is available, Lakebase applies it the next time your compute restarts. See Manage updates .",
+      "summary": "Lakebase updated its supported Postgres versions to 18.6, 17.11, and 16.15. These minor releases bring you the latest upstream Postgres fixes and security patches. When a new minor version is available, Lakebase applies it the next time your compute restarts. See Manage updates .",
       "published": "2026-08-24T00:00:00+00:00",
       "category": "Lakebase",
       "domain": "docs.databricks.com"
@@ -4579,7 +4615,7 @@
       "id": "f357376691f7",
       "title": "Block or redact sensitive data in requests and responses",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#block-or-redact-sensitive-data-in-requests-and-responses",
-      "summary": "The Sensitive Data Detection guardrail (Beta) detects structured sensitive data (such as Social Security numbers, credit card numbers, IBANs, and phone numbers) and either blocks the interaction or redacts the matched values in place. Detection is deterministic (regular expressions plus checksums and context keywords, with no evaluator model), so it adds under 50 ms for a 100-turn conversation and returns the same result every time. To use it, enable the Enhanced Unity Gateway preview on the account console Previews page. This release also includes the following improvements: Blocked interacti",
+      "summary": "The Sensitive Data Detection guardrail (Beta) detects structured sensitive data (such as Social Security numbers, credit card numbers, IBANs, and phone numbers) and either denies the interaction or masks the matched values in place. Detection is deterministic (regular expressions plus checksums and context keywords, with no evaluator model), so it adds under 50 ms and returns the same result every time. To use it, turn on the Unity Gateway Service Policies preview on the Previews page in your workspace. This release also includes the following improvements: For chat-style APIs, blocked interac",
       "published": "2026-08-13T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -4678,7 +4714,7 @@
       "id": "694c23d27dc3",
       "title": "Block or redact sensitive data in requests and responses",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#block-or-redact-sensitive-data-in-requests-and-responses",
-      "summary": "The Sensitive Data Detection guardrail (Beta) detects structured sensitive data (such as Social Security numbers, credit card numbers, IBANs, and phone numbers) and either blocks the interaction or redacts the matched values in place. Detection is deterministic (regular expressions plus checksums and context keywords, with no evaluator model), so it adds under 50 ms for a 100-turn conversation and returns the same result every time. To use it, enable the Enhanced Unity Gateway preview on the account console Previews page. This release also includes the following improvements: Blocked interacti",
+      "summary": "The Sensitive Data Detection guardrail (Beta) detects structured sensitive data (such as Social Security numbers, credit card numbers, IBANs, and phone numbers) and either denies the interaction or masks the matched values in place. Detection is deterministic (regular expressions plus checksums and context keywords, with no evaluator model), so it adds under 50 ms and returns the same result every time. To use it, turn on the Unity Gateway Service Policies preview on the Previews page in your workspace. This release also includes the following improvements: For chat-style APIs, blocked interac",
       "published": "2026-08-13T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -5515,7 +5551,7 @@
       "id": "aca05ffd078c",
       "title": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/july#databricks-runtime-19-and-databricks-runtime-19-for-machine-learning-are-now-generally-available",
-      "summary": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now generally available (GA), powered by Apache Spark 4.2.0. For release notes, see Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning .",
+      "summary": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now generally available (GA), powered by Apache Spark 4.3.0. For release notes, see Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning .",
       "published": "2026-07-23T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -6793,7 +6829,7 @@
       "id": "9faee7566c5a",
       "title": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are in Beta",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/june#databricks-runtime-19-and-databricks-runtime-19-for-machine-learning-are-in-beta",
-      "summary": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now in Beta, powered by Apache Spark 4.2.0. For release notes, see Databricks Runtime 19 (Beta) and Databricks Runtime 19 for Machine Learning (Beta) .",
+      "summary": "Databricks Runtime 19 and Databricks Runtime 19 for Machine Learning are now in Beta, powered by Apache Spark 4.3.0. For release notes, see Databricks Runtime 19 (Beta) and Databricks Runtime 19 for Machine Learning (Beta) .",
       "published": "2026-06-15T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -6847,7 +6883,7 @@
       "id": "3540bfbaebc7",
       "title": "Databricks Runtime 19 (Beta): June 15, 2026",
       "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-beta-june-15-2026",
-      "summary": "Databricks Runtime 19 is now available in Beta, powered by Apache Spark 4.2.0. Behavioral changes JDK 17 removed : Databricks Runtime 19 only supports JDK 21. Previously, Databricks Runtime 18 included JDK 17 as a fallback option that could be selected using the JNAME environment variable. That fallback is no longer available in Databricks Runtime 19. Clusters that set JNAME=zulu17-ca-amd64 (or the ARM equivalent) must remove that environment variable before upgrading. Python packages removed : Compared to Databricks Runtime 18, approximately 90 standard runtime packages are removed in Databri",
+      "summary": "Databricks Runtime 19 is now available in Beta, powered by Apache Spark 4.3.0. Behavioral changes JDK 17 removed : Databricks Runtime 19 only supports JDK 21. Previously, Databricks Runtime 18 included JDK 17 as a fallback option that could be selected using the JNAME environment variable. That fallback is no longer available in Databricks Runtime 19. Clusters that set JNAME=zulu17-ca-amd64 (or the ARM equivalent) must remove that environment variable before upgrading. Python packages removed : Compared to Databricks Runtime 18, approximately 90 standard runtime packages are removed in Databri",
       "published": "2026-06-15T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
