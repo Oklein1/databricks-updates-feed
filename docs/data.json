@@ -1,13 +1,85 @@
 {
-  "generated_at": "2026-11-16T13:20:57.799400+00:00",
+  "generated_at": "2026-11-17T14:06:11.391523+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1574,
+  "count": 1587,
   "items": [
+    {
+      "id": "b2a64de569ba",
+      "title": "Genie Code CLI is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-code-cli-is-now-generally-available",
+      "summary": "Genie Code CLI is now generally available and managed the same way as Genie Code in the workspace. Admins manage one Genie Code budget across the CLI and the workspace, and users can apply their free monthly Genie usage in the CLI. See Genie Code CLI .",
+      "published": "2026-11-18T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "0a020670db91",
+      "title": "Governed tag propagation supports classic compute (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#governed-tag-propagation-supports-classic-compute-beta",
+      "summary": "Governed tag propagation now supports classic compute running Databricks Runtime 19 or above, in addition to serverless compute. Governed tags on a source propagate to the tables and views derived from it on either type of compute. See Tag propagation .",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "08722163b367",
+      "title": "Share Unity Catalog agent skills with OpenSharing and Databricks Marketplace (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#share-unity-catalog-agent-skills-with-opensharing-and-databricks-marketplace-beta",
+      "summary": "Providers can add Unity Catalog agent skills to OpenSharing shares and Databricks Marketplace listings. Databricks-to-Databricks recipients get read-only access to each shared skill in the catalog they create from the share, and changes that the provider makes reach recipients asynchronously. See Add agent skills to a share and Create a Marketplace listing .",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "1f8adf79f1ae",
+      "title": "Databricks Runtime 19: November 16, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/runtime/19#databricks-runtime-19-november-16-2026",
+      "summary": "Behavioral changes Starting with this release, new streaming queries in real-time mode use real-time watermark propagation by default. Stateful operators advance the event-time watermark within a batch, so late events are filtered against the live watermark and state is evicted sooner than before. Queries restarted from an existing checkpoint keep their original behavior. To keep the previous behavior for a new query, set spark.databricks.streaming.realTimeMode.realTimeWatermark.enabled to false before starting it. Bug fixes Operating system security updates and miscellaneous fixes.",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "eca9c041545b",
+      "title": "IP functions will soon be available by default for workspaces with the compliance security profile enabled",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#ip-functions-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
+      "summary": "IP functions will be available by default for workspaces with the compliance security profile enabled. Use IP functions to work with IP addresses and CIDR blocks, including joins on IP addresses and CIDR blocks. See IP functions .",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "95dcb919d8ca",
+      "title": "PostgreSQL integrated CDC pipeline is now in Beta",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#postgresql-integrated-cdc-pipeline-is-now-in-beta",
+      "summary": "You can now ingest change data from PostgreSQL into Databricks using a single integrated CDC pipeline, with no separate ingestion gateway. This feature is in Beta . See Create an integrated CDC pipeline for PostgreSQL .",
+      "published": "2026-11-15T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
     {
       "id": "d4a3e9e46504",
       "title": "AI Function task support in Declarative Automation Bundles (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#ai-function-task-support-in-declarative-automation-bundles-beta",
       "summary": "Support for AI Function tasks in Declarative Automation Bundles is now in Beta . See AI Function task .",
+      "published": "2026-11-13T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f70fbb668757",
+      "title": "External access to views through the Iceberg REST catalog is in Beta",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#external-access-to-views-through-the-iceberg-rest-catalog-is-in-beta",
+      "summary": "External Iceberg engines can now query Unity Catalog views over Iceberg-compatible tables through the Iceberg REST catalog. This feature is in Beta . See External access to views .",
+      "published": "2026-11-13T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "6007699d9eea",
+      "title": "Submit support cases from your workspace with the Get support form",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#submit-support-cases-from-your-workspace-with-the-get-support-form",
+      "summary": "You can now open a Databricks support case from your workspace with the Get support form. The form fills in issue details, attaches diagnostic files, and suggests an AI-generated solution before you submit. See Submit a Databricks support case from your workspace .",
       "published": "2026-11-13T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -103,6 +175,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "418c32bba0c6",
+      "title": "Budgets now support daily thresholds in addition to monthly thresholds",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#budgets-now-support-daily-thresholds-in-addition-to-monthly-thresholds",
+      "summary": "Budgets scoped to Unity Gateway, including budgets for Genie, now support daily per-user thresholds in addition to monthly per-user thresholds. You can set a daily threshold, a monthly threshold, or both, and configure separate alert, webhook, and block usage actions for each period. Daily thresholds reset at 00:00 UTC. See Create and monitor budgets .",
+      "published": "2026-11-12T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "97f935243ad3",
       "title": "Flows are securable objects in Unity Catalog (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#flows-are-securable-objects-in-unity-catalog-beta",
@@ -145,6 +226,15 @@
       "summary": "OAuth on-behalf-of (OBO) for service principals is now generally available and turned on by default. With OBO, you use the standard user-to-machine (U2M) OAuth flow to act as a service principal you manage, without creating an OAuth secret. You must have the Service Principal Manager role on the service principal. A workspace admin no longer needs to turn on the feature from the Previews page. See Authenticate as a service principal using OAuth OBO .",
       "published": "2026-11-12T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d92e5c140424",
+      "title": "Budgets now support daily thresholds in addition to monthly thresholds",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#budgets-now-support-daily-thresholds-in-addition-to-monthly-thresholds",
+      "summary": "Budgets scoped to Unity Gateway, including budgets for Genie, now support daily per-user thresholds in addition to monthly per-user thresholds. You can set a daily threshold, a monthly threshold, or both, and configure separate alert, webhook, and block usage actions for each period. Daily thresholds reset at 00:00 UTC. See Create and monitor budgets .",
+      "published": "2026-11-12T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -215,6 +305,15 @@
       "title": "Pages are generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#pages-are-generally-available",
       "summary": "Pages, governed definitions of business concepts organized by domain on the Discover page, are generally available. Curators can certify and deprecate Pages, and the new MANAGE PAGES permission controls who can publish and manage Pages in a domain. You can also manage Pages with the REST API. See Pages .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "679785463828",
+      "title": "Serverless rate limits are now in Beta",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#serverless-rate-limits-are-now-in-beta",
+      "summary": "You can now limit Spark executor autoscaling for serverless jobs and pipelines by setting a size on an automated compute object. See Set rate limits on serverless compute .",
       "published": "2026-11-11T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -568,6 +667,15 @@
       "summary": "Zhipu AI GLM 5.2 is deprecated and will be retired on February 4, 2027. GLM 5.3 is the recommended replacement. See Legacy, deprecated, and retired models for migration guidance.",
       "published": "2026-11-06T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "70a370d97471",
+      "title": "Account-only user access to Genie One will soon be generally available and enabled by default",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#account-only-user-access-to-genie-one-will-soon-be-generally-available-and-enabled-by-default",
+      "summary": "In November 2026, account-only user access to Genie One will be generally available and enabled by default. Users added to your account through automatic identity management (AIM) or account-level System for Cross-domain Identity Management (SCIM) can then access account-level Genie One without being assigned to a workspace or granted consumer access . Unity Catalog continues to govern what each user can see. Because account-only users can access objects shared with the all account users group, review those shares before the change takes effect. To opt out, an account admin can turn off Accoun",
+      "published": "2026-11-06T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -2467,6 +2575,15 @@
       "summary": "Databricks SQL version 2026.39 is rolling out to the Current channel. See features in 2026.39 .",
       "published": "2026-10-05T00:00:00+00:00",
       "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "a35ecd50094e",
+      "title": "Custom trace views in the MLflow trace explorer are now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/october#custom-trace-views-in-the-mlflow-trace-explorer-are-now-generally-available",
+      "summary": "Custom trace views in the Databricks MLflow trace explorer are now generally available. Describe the layout you want in plain language, and Genie generates a reusable view that surfaces the trace fields, metrics, and feedback controls most relevant to your review workflow. See Build a custom trace view .",
+      "published": "2026-10-03T00:00:00+00:00",
+      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
