@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T14:06:37.395932+00:00",
+  "generated_at": "2026-11-20T13:49:10.072793+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1619,
+  "count": 1627,
   "items": [
     {
       "id": "5e8de674818d",
@@ -13,11 +13,38 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "5a89b46aeb1a",
+      "title": "OAuth authentication for webhook destinations will soon be available by default for workspaces with the compliance security profile enabled",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#oauth-authentication-for-webhook-destinations-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
+      "summary": "Starting on or after December 20, 2026, OAuth authentication for webhook destinations will be available by default for workspaces with the compliance security profile enabled, subject to the requirements for regions and compliance standards . Use OAuth 2.0 client credentials to send notifications to an endpoint that requires an access token. Databricks obtains the token from the configured OAuth token endpoint and uses it to authenticate the notification request. Existing webhook destinations retain their configured authentication. See OAuth authentication for webhook destinations .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "e93d8ea30720",
+      "title": "Lakebase now supports Postgres 19",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-supports-postgres-19",
+      "summary": "Lakebase now supports Postgres 19. To use Postgres 19, select it when creating a new project. For a full list of supported versions, see Postgres compatibility .",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "85941d8cfdca",
       "title": "Gemini 3.6 Flash is retired",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#gemini-36-flash-is-retired",
       "summary": "Google Gemini 3.6 Flash is retired as of November 19, 2026. API calls to Gemini 3.6 Flash are automatically redirected to Gemini 3.8 Flash, the recommended replacement, at the same price. See Legacy, deprecated, and retired models for migration guidance.",
       "published": "2026-11-19T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "de5c856bf2aa",
+      "title": "ai_forecast version 2 is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#ai_forecast-version-2-is-now-generally-available",
+      "summary": "Version 2 of the ai_forecast function is now generally available in Databricks SQL. A research-optimized time series foundation model powers version 2 for improved out-of-the-box accuracy, and version 2 adds built-in holiday support, external covariates, and non-negative forecasts. See ai_forecast function .",
+      "published": "2026-11-18T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
     },
@@ -53,6 +80,15 @@
       "title": "Genie Code CLI is now generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-code-cli-is-now-generally-available",
       "summary": "Genie Code CLI is now generally available and managed the same way as Genie Code in the workspace. Admins manage one Genie Code budget across the CLI and the workspace, and users can apply their free monthly Genie usage in the CLI. See Genie Code CLI .",
+      "published": "2026-11-18T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "6891266fd813",
+      "title": "OAuth M2M authentication for the Salesforce, ServiceNow, and Jira connectors",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#oauth-m2m-authentication-for-the-salesforce-servicenow-and-jira-connectors",
+      "summary": "OAuth machine-to-machine (M2M) authentication is now generally available for the Salesforce , ServiceNow , and Jira connectors in Lakeflow Connect. M2M uses the OAuth client credentials flow, so no one signs in interactively. For Jira, M2M supports Jira Cloud only.",
       "published": "2026-11-18T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -148,6 +184,24 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "1b0d02a58acc",
+      "title": "Databricks SQL version 2026.46 is rolling out in Current",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202646-is-rolling-out-in-current",
+      "summary": "Databricks SQL version 2026.46 is rolling out to the Current channel. See 2026.46 for the changes in this version.",
+      "published": "2026-11-17T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "7ec39e01585f",
+      "title": "Databricks SQL version 2026.47 is now available in Preview",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202647-is-now-available-in-preview",
+      "summary": "Databricks SQL version 2026.47 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "published": "2026-11-17T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "e6b3163e988c",
       "title": "TIMERANGE_NOW() on the Lakewatch query page uses the selected time range",
       "link": "https://docs.databricks.com/aws/en/release-notes/lakewatch#timerange_now-on-the-lakewatch-query-page-uses-the-selected-time-range",
@@ -193,10 +247,28 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "bc04517a1488",
+      "title": "Genie Ontology snippets will soon be generally available and enabled by default",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#genie-ontology-snippets-will-soon-be-generally-available-and-enabled-by-default",
+      "summary": "In early November 2026, Genie Ontology snippets will be generally available and enabled by default. Genie Ontology automatically extracts and maintains business context from your existing assets and usage, including metric views, dashboards, SQL queries, and Genie Agents. Genie One and Genie Code search the most relevant snippets from assets you have permission to access, improving response accuracy and speed. See Genie Ontology .",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "eca9c041545b",
       "title": "IP functions will soon be available by default for workspaces with the compliance security profile enabled",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#ip-functions-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
       "summary": "IP functions will be available by default for workspaces with the compliance security profile enabled. Use IP functions to work with IP addresses and CIDR blocks, including joins on IP addresses and CIDR blocks. See IP functions .",
+      "published": "2026-11-16T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "913550c84715",
+      "title": "Upcoming breaking change: array_contains with a constant empty array will return NULL for a NULL value",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-breaking-change-array_contains-with-a-constant-empty-array-will-return-null-for-a-null-value",
+      "summary": "Starting on or after January 15, 2027, with ANSI mode enabled in Databricks Runtime 19 and above, array_contains(arr, value) will return NULL, not false, when arr is a constant empty array and value is NULL. map_contains_key(map, key) with a constant empty map will change the same way. As a result, NOT array_contains(arr, value) will no longer match rows where value is NULL. To keep the previous result, use size(arr) > 0 AND array_contains(arr, value) . See array_contains function and map_contains_key function .",
       "published": "2026-11-16T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -349,7 +421,7 @@
       "id": "4bd29bad73b0",
       "title": "Postgres 18.7, 17.12, and 16.16 now available",
       "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#postgres-187-1712-and-1616-now-available",
-      "summary": "Lakebase updated its supported Postgres versions to 18.7 , 17.12 , and 16.16 , less than 30 minutes after the PostgreSQL community released them . These minor releases include the latest upstream Postgres bug fixes and security patches. Lakebase applies a new minor version the next time your compute restarts. See Recent minor version rollouts .",
+      "summary": "Lakebase updated its supported Postgres versions to 18.7 , 17.12 , and 16.16 , less than 30 minutes after the PostgreSQL community released them . These minor releases include the latest upstream Postgres bug fixes and security patches. Lakebase applies a new minor version the next time your compute restarts. See Recent version rollouts .",
       "published": "2026-11-12T00:00:00+00:00",
       "category": "Lakebase",
       "domain": "docs.databricks.com"
