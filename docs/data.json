@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T13:49:10.072793+00:00",
+  "generated_at": "2026-11-21T13:14:39.199475+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1627,
+  "count": 1638,
   "items": [
     {
       "id": "5e8de674818d",
@@ -13,10 +13,46 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "60bb85a5ad3e",
+      "title": "MCP tools in Genie Agents are generally available",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#mcp-tools-in-genie-agents-are-generally-available",
+      "summary": "MCP tools in Genie Agents are now generally available. Authors can attach external MCP servers registered in Unity Gateway, in addition to Databricks-provided connectors, and the Agent mode APIs support MCP tools. See Connect a Genie Agent to MCP tools and sources .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f374c9ca67ba",
+      "title": "Lakebase now available in three additional regions",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-available-in-three-additional-regions",
+      "summary": "Lakebase is now available in the following regions: eu-west-3 (Europe - Paris) ap-southeast-3 (Asia Pacific - Jakarta) ap-northeast-2 (Asia Pacific - Seoul) For the full list of supported regions, see Region availability . To get started, see Get a Postgres database .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f61dc1ec53d7",
+      "title": "Warehouse-level statement timeouts are now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#warehouse-level-statement-timeouts-are-now-generally-available",
+      "summary": "Warehouse-level statement timeouts are now generally available. Set the timeout with the statement_timeout field in the SQL warehouses API, Databricks SDKs, Terraform, or Declarative Automation Bundles. See Statement timeout .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "5a89b46aeb1a",
       "title": "OAuth authentication for webhook destinations will soon be available by default for workspaces with the compliance security profile enabled",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#oauth-authentication-for-webhook-destinations-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
       "summary": "Starting on or after December 20, 2026, OAuth authentication for webhook destinations will be available by default for workspaces with the compliance security profile enabled, subject to the requirements for regions and compliance standards . Use OAuth 2.0 client credentials to send notifications to an endpoint that requires an access token. Databricks obtains the token from the configured OAuth token endpoint and uses it to authenticate the notification request. Existing webhook destinations retain their configured authentication. See OAuth authentication for webhook destinations .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "35f2eb5b7bff",
+      "title": "The Databricks GitHub app will request permission to create and manage pull requests",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#the-databricks-github-app-will-request-permission-to-create-and-manage-pull-requests",
+      "summary": "In an upcoming change, the Databricks GitHub app will request Read and write access to pull requests , so that tools like Genie Code and Genie ZeroOps can create and manage pull requests for you. Your branch protection rules and required reviews still apply. When this happens, owners of GitHub organizations and accounts that have the app installed will receive an email from GitHub titled \"Databricks is requesting updated permissions.\" This is a legitimate request from Databricks. If you don't accept, nothing changes from today. You can still clone, pull, commit, and push. The only difference i",
       "published": "2026-11-20T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -31,12 +67,57 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "4651ef701f85",
+      "title": "Manage Lakewatch with the Databricks CLI (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakewatch#manage-lakewatch-with-the-databricks-cli-beta",
+      "summary": "You can now manage Lakewatch from the command line with the lakewatch command group in the Databricks CLI. Use it to create and manage datasources, parsers, and detection rules, and to update per-catalog Lakewatch configuration. The command group requires Databricks CLI version 1.25.0 or above, and the parser commands require version 1.27.0 or above. See lakewatch command group .",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "25fc2bd7fa00",
+      "title": "Databricks-to-Databricks Delta Sharing across regulatory domains is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#databricks-to-databricks-delta-sharing-across-regulatory-domains-is-now-generally-available",
+      "summary": "Databricks-to-Databricks Delta Sharing across regulatory domains is now generally available. Commercial workspaces can share with AWS GovCloud, AWS GovCloud DoD, and Azure China. Sharing between Azure China and either AWS GovCloud or AWS GovCloud DoD is not supported. See Databricks-to-Databricks OpenSharing support matrix for cloud environments .",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "85941d8cfdca",
       "title": "Gemini 3.6 Flash is retired",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#gemini-36-flash-is-retired",
       "summary": "Google Gemini 3.6 Flash is retired as of November 19, 2026. API calls to Gemini 3.6 Flash are automatically redirected to Gemini 3.8 Flash, the recommended replacement, at the same price. See Legacy, deprecated, and retired models for migration guidance.",
       "published": "2026-11-19T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "387c418613d8",
+      "title": "GPT-5 and GPT-5 mini will be retired on December 11, 2026",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#gpt-5-and-gpt-5-mini-will-be-retired-on-december-11-2026",
+      "summary": "OpenAI GPT-5 and OpenAI GPT-5 mini will be retired on December 11, 2026. OpenAI GPT-6.1 Sol is the recommended replacement for GPT-5, and OpenAI GPT-6.1 Terra is the recommended replacement for GPT-5 mini. See Legacy, deprecated, and retired models for migration guidance.",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "240ca9b4e4f8",
+      "title": "Manage Lakewatch with the Databricks CLI (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#manage-lakewatch-with-the-databricks-cli-beta",
+      "summary": "You can now manage Lakewatch from the command line with the lakewatch command group in the Databricks CLI. Use it to create and manage datasources, parsers, and detection rules, and to update per-catalog Lakewatch configuration. The command group requires Databricks CLI version 1.25.0 or above, and the parser commands require version 1.27.0 or above. See lakewatch command group .",
+      "published": "2026-11-19T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "be61f64e7e5a",
+      "title": "LTAP Direct Writes for synced tables is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#ltap-direct-writes-for-synced-tables-is-now-generally-available",
+      "summary": "LTAP Direct Writes is now generally available. It writes synced table loads directly to Lakebase storage instead of through your compute endpoint, so large initial loads and full refreshes finish faster and don't compete with your application's queries. To use it, select LTAP Direct Writes when you create a synced table. See Accelerated sync with LTAP Direct Writes .",
+      "published": "2026-11-18T00:00:00+00:00",
+      "category": "Lakebase",
       "domain": "docs.databricks.com"
     },
     {
@@ -593,6 +674,15 @@
       "title": "Feature Views are now available by default for workspaces with the compliance security profile enabled",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#feature-views-are-now-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
       "summary": "Feature Views are now available by default for workspaces with the compliance security profile enabled. See Feature Views .",
+      "published": "2026-11-11T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "ce82640bc93c",
+      "title": "Notifications operator available across clouds in Lakeflow Designer",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#notifications-operator-available-across-clouds-in-lakeflow-designer",
+      "summary": "The Notifications operator in Lakeflow Designer is now available on Azure, joining AWS and GCP. Send email with table attachments when a visual data prep runs. See Notifications .",
       "published": "2026-11-11T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -1201,6 +1291,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "ac69d9adb784",
+      "title": "Scope modifiers for personal access tokens and OAuth are generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#scope-modifiers-for-personal-access-tokens-and-oauth-are-generally-available",
+      "summary": "Scope modifiers narrow an API scope to a subset of its operations, such as clusters:read for read operations or sql:restricted-query for read-only SQL queries, in personal access tokens, OAuth secrets, and OAuth token requests. See Narrow API scopes with scope modifiers .",
+      "published": "2026-11-04T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "afc7a8828d4a",
       "title": "Moonshot AI Kimi K3.1 Pro is now available on Unity Gateway",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#moonshot-ai-kimi-k31-pro-is-now-available-on-unity-gateway",
@@ -1411,7 +1510,7 @@
       "id": "2d27b539ebe8",
       "title": "AI Functions usage is now included in Unity Gateway budgets",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#ai-functions-usage-is-now-included-in-unity-gateway-budgets",
-      "summary": "Beginning November 1, 2026, Unity Gateway budgets include spend from task-specific AI Functions such as ai_parse_document , ai_extract , and ai_classify across batch and real-time execution paths. See Manage budgets for Unity Gateway .",
+      "summary": "Beginning November 1, 2026, Unity Gateway budgets include spend from task-specific AI Functions such as ai_parse_document , ai_extract , and ai_classify across batch and real-time execution paths. See Set budgets and spend limits for Unity Gateway .",
       "published": "2026-11-01T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -1420,7 +1519,7 @@
       "id": "44e0e19a715b",
       "title": "AI Functions usage is now included in Unity Gateway budgets",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#ai-functions-usage-is-now-included-in-unity-gateway-budgets",
-      "summary": "Beginning November 1, 2026, Unity Gateway budgets include spend from task-specific AI Functions such as ai_parse_document , ai_extract , and ai_classify across batch and real-time execution paths. See Manage budgets for Unity Gateway .",
+      "summary": "Beginning November 1, 2026, Unity Gateway budgets include spend from task-specific AI Functions such as ai_parse_document , ai_extract , and ai_classify across batch and real-time execution paths. See Set budgets and spend limits for Unity Gateway .",
       "published": "2026-11-01T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -2293,7 +2392,7 @@
       "id": "e5da8065f293",
       "title": "Consumer access to query Unity Gateway services is generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/october#consumer-access-to-query-unity-gateway-services-is-generally-available",
-      "summary": "Users with the consumer access entitlement no longer need an account admin to enable the \"Consumer access to Unity Gateway\" preview to query the model services and model provider services shared with them, or to use Unity Gateway coding agent features. See Consumer access capabilities . This change can increase model traffic from consumer access users, including traffic to external providers. To control this traffic, account admins can set budgets and rate limits, or disable direct model access, for consumer access users. See Manage budgets for Unity Gateway , Apply rate limits to model and MC",
+      "summary": "Users with the consumer access entitlement no longer need an account admin to enable the \"Consumer access to Unity Gateway\" preview to query the model services and model provider services shared with them, or to use Unity Gateway coding agent features. See Consumer access capabilities . This change can increase model traffic from consumer access users, including traffic to external providers. To control this traffic, account admins can set budgets and rate limits, or disable direct model access, for consumer access users. See Set budgets and spend limits for Unity Gateway , Apply rate limits t",
       "published": "2026-10-15T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -2338,7 +2437,7 @@
       "id": "ac1b329e7291",
       "title": "Consumer access to query Unity Gateway services is generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#consumer-access-to-query-unity-gateway-services-is-generally-available",
-      "summary": "Users with the consumer access entitlement no longer need an account admin to enable the \"Consumer access to Unity Gateway\" preview to query the model services and model provider services shared with them, or to use Unity Gateway coding agent features. See Consumer access capabilities . This change can increase model traffic from consumer access users, including traffic to external providers. To control this traffic, account admins can set budgets and rate limits, or disable direct model access, for consumer access users. See Manage budgets for Unity Gateway , Apply rate limits to model and MC",
+      "summary": "Users with the consumer access entitlement no longer need an account admin to enable the \"Consumer access to Unity Gateway\" preview to query the model services and model provider services shared with them, or to use Unity Gateway coding agent features. See Consumer access capabilities . This change can increase model traffic from consumer access users, including traffic to external providers. To control this traffic, account admins can set budgets and rate limits, or disable direct model access, for consumer access users. See Set budgets and spend limits for Unity Gateway , Apply rate limits t",
       "published": "2026-10-15T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -4471,7 +4570,7 @@
       "id": "979930d2c3ec",
       "title": "Monitor and cap external provider costs",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/august#monitor-and-cap-external-provider-costs",
-      "summary": "Unity Gateway can now track and cap spend on external model providers, such as Amazon Bedrock and Azure AI Foundry, not just Databricks-provided models. If your organization already has capacity commitments directly with a provider, Unity Gateway becomes the single point to track that usage and enforce spend limits across teams and use cases. To turn it on, enable External Model Spend in Budgets (Beta) on the account console Previews page, then select Include external model usage when you create a budget scoped to the Unity Gateway resource type. See Include external model usage .",
+      "summary": "Unity Gateway can now track and cap spend on external model providers, such as Amazon Bedrock and Azure AI Foundry, not just Databricks-provided models. If your organization already has capacity commitments directly with a provider, Unity Gateway becomes the single point to track that usage and enforce spend limits across teams and use cases. To turn it on, enable External Model Spend in Budgets (Beta) on the account console Previews page, then select Include external model usage when you create a budget scoped to the Unity Gateway resource type. See Step 1. Choose the budget scope .",
       "published": "2026-08-28T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -4489,7 +4588,7 @@
       "id": "b6c0574f9d9f",
       "title": "Monitor and cap external provider costs",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#monitor-and-cap-external-provider-costs",
-      "summary": "Unity Gateway can now track and cap spend on external model providers, such as Amazon Bedrock and Azure AI Foundry, not just Databricks-provided models. If your organization already has capacity commitments directly with a provider, Unity Gateway becomes the single point to track that usage and enforce spend limits across teams and use cases. To turn it on, enable External Model Spend in Budgets (Beta) on the account console Previews page, then select Include external model usage when you create a budget scoped to the Unity Gateway resource type. See Include external model usage .",
+      "summary": "Unity Gateway can now track and cap spend on external model providers, such as Amazon Bedrock and Azure AI Foundry, not just Databricks-provided models. If your organization already has capacity commitments directly with a provider, Unity Gateway becomes the single point to track that usage and enforce spend limits across teams and use cases. To turn it on, enable External Model Spend in Budgets (Beta) on the account console Previews page, then select Include external model usage when you create a budget scoped to the Unity Gateway resource type. See Step 1. Choose the budget scope .",
       "published": "2026-08-28T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -6199,7 +6298,7 @@
       "id": "e7290cae8ae3",
       "title": "Warehouse-level statement timeouts (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/july#warehouse-level-statement-timeouts-beta",
-      "summary": "You can now set a statement timeout on a single SQL warehouse so that different warehouses can apply different timeouts to their queries. Set the timeout with the statement_timeout field in the Create or Update warehouse APIs. This feature is in Beta and is API-only. See Warehouse-level timeout .",
+      "summary": "You can now set a statement timeout on a single SQL warehouse so that different warehouses can apply different timeouts to their queries. Set the timeout with the statement_timeout field in the Create or Update warehouse APIs. This feature is in Beta and is API-only. See Statement timeout .",
       "published": "2026-07-21T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -6694,7 +6793,7 @@
       "id": "de261744d426",
       "title": "Budgets are now generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/july#budgets-are-now-generally-available",
-      "summary": "Budgets, including budgets for Unity Gateway, are now generally available. Budgets let admins define spending thresholds. For requests managed through Unity Gateway, including Genie interactions, admins can set additional per-user thresholds and overrides, with configurable actions such as email alerting and usage blocking. See Create and monitor budgets and Manage budgets for Unity Gateway .",
+      "summary": "Budgets, including budgets for Unity Gateway, are now generally available. Budgets let admins define spending thresholds. For requests managed through Unity Gateway, including Genie interactions, admins can set additional per-user thresholds and overrides, with configurable actions such as email alerting and usage blocking. See Create and monitor budgets and Set budgets and spend limits for Unity Gateway .",
       "published": "2026-07-06T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -9967,9 +10066,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "f374c9ca67ba",
+      "id": "6ca155ff22a9",
       "title": "Lakebase now available in three additional regions",
-      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-available-in-three-additional-regions",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-now-available-in-three-additional-regions-1",
       "summary": "Lakebase is now available in three additional regions: ca-central-1 (Canada Central) eu-west-2 (Europe – London) sa-east-1 (South America – São Paulo) See Get started with Lakebase .",
       "published": "2026-03-02T00:00:00+00:00",
       "category": "Lakebase",
@@ -11824,7 +11923,7 @@
       "id": "10d6da264140",
       "title": "New compute policy form is now generally available",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/october#new-compute-policy-form-is-now-generally-available",
-      "summary": "The new compute policy form is now generally available. The new form allows you to configure policy definitions using dropdown menus and other UI elements. This means admins can write policies without having to learn or reference the policy syntax. See Create and manage compute policies and Compute policy reference .",
+      "summary": "The new compute policy form is now generally available. The new form allows you to configure policy definitions using dropdown menus and other UI elements. This means admins can write policies without having to learn or reference the policy syntax. See Create and manage classic compute policies and Compute policy reference .",
       "published": "2025-10-29T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
