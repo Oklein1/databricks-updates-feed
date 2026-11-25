@@ -1,8 +1,53 @@
 {
-  "generated_at": "2026-11-24T15:30:25.809228+00:00",
+  "generated_at": "2026-11-25T15:17:26.197866+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1655,
+  "count": 1661,
   "items": [
+    {
+      "id": "491dcf1e9055",
+      "title": "Migrate a Postgres database to Lakebase (Beta)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#migrate-a-postgres-database-to-lakebase-beta",
+      "summary": "You can now copy an existing PostgreSQL database into a Lakebase project in a single, one-time migration. Lakebase assesses the source database for compatibility, then copies its roles, schema, and data to a branch that you choose. Migrations are available in the Lakebase App and through the Postgres API and SDKs, with no separate enablement step. See Migrate a Postgres database to Lakebase for migration steps and region availability.",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "1185e108a833",
+      "title": "Lakewatch streaming detection rules (Experimental)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakewatch#lakewatch-streaming-detection-rules-experimental",
+      "summary": "Lakewatch now supports streaming detection rules, which evaluate each new row of a source table as it arrives and create a signal for every row that matches a SQL predicate. Use them for low-latency signature, indicator of compromise (IOC), and atomic-signal detections. Lakewatch manages the compute, so you don't select a SQL warehouse or a schedule. Streaming rules are an experimental feature. See Streaming detection rules .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "a70fb5166136",
+      "title": "Genie Migrate conversion to Lakeflow pipelines is generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-migrate-conversion-to-lakeflow-pipelines-is-generally-available",
+      "summary": "Genie Migrate conversion of T-SQL scripts from SQL Server and Azure Synapse dedicated SQL pools into Lakeflow pipelines is now generally available . In a T-SQL migration project, choose the Spark Declarative Pipelines target framework, organize your files into groups, and choose a catalog and schema for each group. Each group becomes one serverless pipeline that Genie Migrate validates with a dry run. To use the Spark Declarative Pipelines target framework, a workspace admin must turn on Migration Projects Experimental Features from the Previews page. See Manage Databricks previews . See Suppo",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "ba30f69841b4",
+      "title": "Lakewatch streaming detection rules (Experimental)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#lakewatch-streaming-detection-rules-experimental",
+      "summary": "Lakewatch now supports streaming detection rules, which evaluate each new row of a source table as it arrives and create a signal for every row that matches a SQL predicate. Use them for low-latency signature, indicator of compromise (IOC), and atomic-signal detections. Lakewatch manages the compute, so you don't select a SQL warehouse or a schedule. Streaming rules are an experimental feature. See Streaming detection rules .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "67a4c1a1c798",
+      "title": "New configuration options for classic instance pools",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#new-configuration-options-for-classic-instance-pools",
+      "summary": "Instance pools now support auto-AZ for all instance types and spot with fallback. You can also change an existing pool's availability zone, availability, and max spot price. See Pool configuration reference .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
     {
       "id": "af8f254ed57d",
       "title": "ai_mask now supports a version 2.0 signature (Beta)",
@@ -26,6 +71,15 @@
       "title": "Impact analysis in Unity Catalog lineage (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#impact-analysis-in-unity-catalog-lineage-beta",
       "summary": "Impact analysis in Unity Catalog lineage shows the downstream assets that depend on a table or column, with each asset's impact level and owner. Genie Code can summarize the impact and export a CSV of owners. See Impact analysis .",
+      "published": "2026-11-23T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f46de2d84484",
+      "title": "Outbound IP addresses for serverless compute are generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#outbound-ip-addresses-for-serverless-compute-are-generally-available",
+      "summary": "Published outbound IP addresses for serverless compute are now generally available. Previously, they were in Public Preview. Databricks publishes the outbound IP addresses in ip-ranges.json . To allow serverless compute through a firewall that protects your resources, add these IP addresses to its allowlist and automate updates as the IP addresses change. See Configure access to other resources using outbound IP addresses .",
       "published": "2026-11-23T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -9841,19 +9895,19 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "94b0dd44ee2c",
-      "title": "Databricks JDBC driver 2.8.0 is available",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-jdbc-driver-280-is-available",
-      "summary": "Databricks JDBC driver version 2.8.0 is now available for download . The new version includes the following features: Upgrades the Simple Logging Facade for Java (SLF4J) from version 1.7.36 to 2.0.13 and moves slf4j-api to the root package path to align with standard SLF4J usage. The driver no longer depends on Log4j. The EnableTelemetry connection property is now on by default. The driver only sends telemetry when the workspace allows it. This release also includes the following bug fixes: Fixes an incorrect error message when the driver can't write to the configured log path. Fixes a connect",
+      "id": "76ccbd21d203",
+      "title": "Databricks usage dashboard is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-usage-dashboard-is-now-generally-available",
+      "summary": "The usage dashboard is now generally available. Account admins can import customizable, pre-built usage dashboards to monitor their Databricks usage at the account and workspace levels. See Usage dashboards .",
       "published": "2026-03-18T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
-      "id": "76ccbd21d203",
-      "title": "Databricks usage dashboard is now generally available",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#databricks-usage-dashboard-is-now-generally-available",
-      "summary": "The usage dashboard is now generally available. Account admins can import customizable, pre-built usage dashboards to monitor their Databricks usage at the account and workspace levels. See Usage dashboards .",
+      "id": "253789b1671c",
+      "title": "Simba JDBC Driver (Legacy) 2.8.0 is available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/march#simba-jdbc-driver-legacy-280-is-available",
+      "summary": "Simba JDBC Driver (Legacy) version 2.8.0 is now available for download . The new version includes the following features: Upgrades the Simple Logging Facade for Java (SLF4J) from version 1.7.36 to 2.0.13 and moves slf4j-api to the root package path to align with standard SLF4J usage. The driver no longer depends on Log4j. The EnableTelemetry connection property is now on by default. The driver only sends telemetry when the workspace allows it. This release also includes the following bug fixes: Fixes an incorrect error message when the driver can't write to the configured log path. Fixes a con",
       "published": "2026-03-18T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
