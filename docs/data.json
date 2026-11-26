@@ -1,8 +1,62 @@
 {
-  "generated_at": "2026-11-25T15:17:26.197866+00:00",
+  "generated_at": "2026-11-26T14:42:39.735233+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1661,
+  "count": 1677,
   "items": [
+    {
+      "id": "b398c4e96ed2",
+      "title": "Dashboard enhancements",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements",
+      "summary": "Larger subscription email attachments : Dashboard subscription emails now support up to 24 MB of combined attachments, up from 9 MB. See Dashboard subscription limits . Excel downloads keep column formatting : Excel ( .xlsx ) files downloaded from a table widget now keep the widget's column display names and column widths. See Download results .",
+      "published": "2026-11-26T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "e5714f2982cd",
+      "title": "Genie One desktop app is generally available on Windows",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#genie-one-desktop-app-is-generally-available-on-windows",
+      "summary": "The Genie One desktop app for Windows is now generally available, with separate installers for x64 and ARM64 devices. The app opens Genie One in its own window, with the same capabilities as the web experience plus desktop conveniences like window navigation controls and automatic updates. See Windows .",
+      "published": "2026-11-26T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "bdc9cac83317",
+      "title": "Power BI and Tableau Cloud connectors for BI imports (Public Preview)",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#power-bi-and-tableau-cloud-connectors-for-bi-imports-public-preview",
+      "summary": "You can now connect Genie Code to Power BI and Tableau Cloud with Databricks-provided MCP connectors. When you import a report with /importBI , Genie Code checks the result against the live source to improve migration quality. This feature is in Public Preview. See Connect to your BI tool to improve migration quality .",
+      "published": "2026-11-26T00:00:00+00:00",
+      "category": "AI/BI",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "31cf4ef97aef",
+      "title": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#moonshot-ai-kimi-k31-pro-fast-is-now-available-on-unity-gateway",
+      "summary": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway. It serves the same model as Kimi K3.1 Pro on a separate endpoint, with native vision and reasoning for coding, knowledge work, and agentic tool use. It's available on pay-per-token endpoints in us-east-1 . To query the model and see supported regions, see Use foundation models .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "f82d7a0a8c99",
+      "title": "Table metrics history system table is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#table-metrics-history-system-table-is-now-generally-available",
+      "summary": "The table metrics history system table ( system.storage.table_metrics_history ) is now generally available. Use it to track the daily storage size of your Unity Catalog managed tables, attribute storage costs, and find tables to clean up. See Table metrics history system table reference .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "32e674c0d481",
+      "title": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#moonshot-ai-kimi-k31-pro-fast-is-now-available-on-unity-gateway",
+      "summary": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway. It serves the same model as Kimi K3.1 Pro on a separate endpoint, with native vision and reasoning for coding, knowledge work, and agentic tool use. It's available on pay-per-token endpoints in us-east-1 . To query the model and see supported regions, see Use foundation models .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
     {
       "id": "491dcf1e9055",
       "title": "Migrate a Postgres database to Lakebase (Beta)",
@@ -19,6 +73,15 @@
       "summary": "Lakewatch now supports streaming detection rules, which evaluate each new row of a source table as it arrives and create a signal for every row that matches a SQL predicate. Use them for low-latency signature, indicator of compromise (IOC), and atomic-signal detections. Lakewatch manages the compute, so you don't select a SQL warehouse or a schedule. Streaming rules are an experimental feature. See Streaming detection rules .",
       "published": "2026-11-24T00:00:00+00:00",
       "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "c8d0bf673d74",
+      "title": "Directory-based access for OpenSharing SecureConnect (Public Preview)",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#directory-based-access-for-opensharing-secureconnect-public-preview",
+      "summary": "OpenSharing SecureConnect can now deliver eligible tables and views to Databricks recipients using serverless compute with directory-based access instead of per-file pre-signed URLs, for better performance. This feature is in Public Preview . Account admins can manage the OpenSharing SecureConnect Directory Based Access preview from the account console Previews page. See Directory-based access for SecureConnect .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
       "domain": "docs.databricks.com"
     },
     {
@@ -40,12 +103,57 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "c044f8b41e75",
+      "title": "Latest automatic expiration date for legacy OpenSharing open recipient tokens moved to February 25, 2027",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#latest-automatic-expiration-date-for-legacy-opensharing-open-recipient-tokens-moved-to-february-25-2027",
+      "summary": "OpenSharing open recipient tokens issued before February 25, 2026, with expiration dates after February 25, 2027, or with no expiration date, now automatically expire on February 25, 2027, instead of December 8, 2026. Data providers should rotate these tokens before February 25, 2027, to avoid breaking changes. Rotated tokens use the new recipient-specific URL format. See Changes to OpenSharing (formerly Delta Sharing) open recipient tokens .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "67a4c1a1c798",
       "title": "New configuration options for classic instance pools",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#new-configuration-options-for-classic-instance-pools",
       "summary": "Instance pools now support auto-AZ for all instance types and spot with fallback. You can also change an existing pool's availability zone, availability, and max spot price. See Pool configuration reference .",
       "published": "2026-11-24T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d8ee8ac9f721",
+      "title": "Recipient-specific URLs for OpenSharing open recipients",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#recipient-specific-urls-for-opensharing-open-recipients",
+      "summary": "In most regions, OpenSharing open recipients now use a recipient-specific URL that includes the recipient ID in the host name. Bearer tokens created or rotated since September 2026 use the new URL, and the OpenSharing UI shows the new URL for OpenID Connect (OIDC) federation recipients. Recipients can allow egress to their recipient-specific host name instead of the shared regional host name. Existing URLs and tokens continue to work until they expire. See Changes to OpenSharing (formerly Delta Sharing) open recipient tokens .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "665f17eda70e",
+      "title": "Sharing Unity Catalog agent skills with OpenSharing and Databricks Marketplace is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#sharing-unity-catalog-agent-skills-with-opensharing-and-databricks-marketplace-is-now-generally-available",
+      "summary": "Providers can add Unity Catalog agent skills to OpenSharing shares and Databricks Marketplace listings, and Databricks recipients can use them. In some accounts, an account admin must turn on the Agent Skill Sharing preview. Sharing and using skills also requires the Enhanced Unity AI Gateway preview, which is in Beta . See Add agent skills to a share and Create a Marketplace listing .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "3e4306f39c1e",
+      "title": "Databricks SQL version 2026.47 is rolling out in Current",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202647-is-rolling-out-in-current",
+      "summary": "Databricks SQL version 2026.47 is rolling out to the Current channel.",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "dae2f9c0f70e",
+      "title": "Databricks SQL version 2026.48 is now available in Preview",
+      "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202648-is-now-available-in-preview",
+      "summary": "Databricks SQL version 2026.48 is now available in the Preview channel.",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "SQL",
       "domain": "docs.databricks.com"
     },
     {
@@ -58,10 +166,28 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "efdf87674200",
+      "title": "Lakebase Terraform resources are generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/lakebase#lakebase-terraform-resources-are-generally-available",
+      "summary": "As of Databricks Terraform provider v1.145.0, these Lakebase resources are generally available: databricks_postgres_project , databricks_postgres_branch , databricks_postgres_endpoint , databricks_postgres_database , databricks_postgres_role , databricks_postgres_catalog , databricks_postgres_synced_table , and databricks_postgres_snapshot_schedule . Release status varies by resource. To check the status of any Lakebase resource, see the release stage badge on its page in the Terraform Registry . See Get started with Terraform for Lakebase .",
+      "published": "2026-11-23T00:00:00+00:00",
+      "category": "Lakebase",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "062bc3d8df78",
       "title": "ai_mask now supports a version 2.0 signature (Beta)",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#ai_mask-now-supports-a-version-20-signature-beta",
       "summary": "The ai_mask function now supports a version 2.0 signature in Beta . Version 2.0 takes a list of system-defined classifiers and masks sensitive data with a Databricks-built detection model. To opt in, pass options => map('version', '2.0') . Version 1.0 remains the default. See ai_mask function .",
+      "published": "2026-11-23T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "a6504c7ab90e",
+      "title": "Artifact Registry is now generally available",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#artifact-registry-is-now-generally-available",
+      "summary": "Artifact Registry is now generally available. Store container images as governed assets in Unity Catalog, browse images and versions in Catalog Explorer, list and manage images with the databricks software-artifacts Databricks CLI commands, and delete images through the Software Artifacts API. See Artifact Registry .",
       "published": "2026-11-23T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -184,10 +310,10 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "b398c4e96ed2",
+      "id": "f0e9f5192a72",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements",
-      "summary": "Larger subscription email attachments : Dashboard subscription emails now support up to 24 MB of combined attachments, up from 9 MB. See Dashboard subscription limits . Recreate dashboards from screenshots : Genie Code for dashboard authoring now reproduces the visual styling of a screenshot more closely when you recreate a dashboard from it.",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-1",
+      "summary": "Recreate dashboards from screenshots : Genie Code for dashboard authoring now reproduces the visual styling of a screenshot more closely when you recreate a dashboard from it.",
       "published": "2026-11-19T00:00:00+00:00",
       "category": "AI/BI",
       "domain": "docs.databricks.com"
@@ -296,6 +422,15 @@
       "title": "Configure materialization TTLs for individual OpenSharing recipients",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#configure-materialization-ttls-for-individual-opensharing-recipients",
       "summary": "You can now set the materialization time to live (TTL) for each open sharing recipient, overriding the metastore default. See Configure a recipient materialization TTL .",
+      "published": "2026-11-18T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d7a61ddf5618",
+      "title": "Delete an operator and reconnect its neighbors in Lakeflow Designer",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#delete-an-operator-and-reconnect-its-neighbors-in-lakeflow-designer",
+      "summary": "Use Delete and reconnect in Lakeflow Designer to remove an operator and connect its upstream output directly to its downstream operators. See Rename, copy, delete, and disable operators .",
       "published": "2026-11-18T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -448,7 +583,7 @@
       "id": "1b0d02a58acc",
       "title": "Databricks SQL version 2026.46 is rolling out in Current",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202646-is-rolling-out-in-current",
-      "summary": "Databricks SQL version 2026.46 is rolling out to the Current channel. See 2026.46 for the changes in this version.",
+      "summary": "Databricks SQL version 2026.46 is rolling out to the Current channel.",
       "published": "2026-11-17T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -457,7 +592,7 @@
       "id": "7ec39e01585f",
       "title": "Databricks SQL version 2026.47 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202647-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.47 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "summary": "Databricks SQL version 2026.47 is now available in the Preview channel.",
       "published": "2026-11-17T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -620,6 +755,15 @@
       "title": "Importing Power BI and Tableau files with Genie Code will soon be available by default for workspaces with the compliance security profile enabled",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#importing-power-bi-and-tableau-files-with-genie-code-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
       "summary": "You can use Genie Code to import Power BI and Tableau files as AI/BI dashboards and metric views. Starting on or after December 15, 2026, this will be available by default for workspaces with the compliance security profile enabled. Until then, a workspace admin can turn it on from Previews in the workspace settings. Importing requires partner-powered AI features for the account and workspace. See Import BI files using Genie Code .",
+      "published": "2026-11-13T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "64c70051df5e",
+      "title": "The Discover page and domains will soon be available by default for workspaces with the compliance security profile enabled",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#the-discover-page-and-domains-will-soon-be-available-by-default-for-workspaces-with-the-compliance-security-profile-enabled",
+      "summary": "Starting in December 2026, the Discover page and domains will be available by default for workspaces with the compliance security profile enabled. Discover is a curated browsing experience that helps users find assets across Databricks without requiring deep knowledge of catalog hierarchies. Use domains and subdomains to organize assets such as tables, dashboards, notebooks, and Genie Agents by business area, highlight key assets with custom curation, and explore AI-recommended assets. See Discover page .",
       "published": "2026-11-13T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -1042,7 +1186,7 @@
       "id": "37f462b64cfe",
       "title": "Databricks SQL version 2026.46 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202646-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.46 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "summary": "Databricks SQL version 2026.46 is now available in the Preview channel.",
       "published": "2026-11-10T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -1609,7 +1753,7 @@
       "id": "725211cab0fe",
       "title": "Databricks SQL version 2026.44 is rolling out in Current",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202644-is-rolling-out-in-current",
-      "summary": "Databricks SQL version 2026.44 is rolling out to the Current channel. See features in 2026.44 .",
+      "summary": "Databricks SQL version 2026.44 is rolling out to the Current channel.",
       "published": "2026-11-03T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -1996,7 +2140,7 @@
       "id": "ffe73150c92f",
       "title": "Databricks SQL version 2026.44 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202644-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.44 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "summary": "Databricks SQL version 2026.44 is now available in the Preview channel.",
       "published": "2026-10-28T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -2209,9 +2353,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "f0e9f5192a72",
+      "id": "16e0ee5d2240",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-1",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-2",
       "summary": "Private bookmarks : Dashboard viewers can now save filter combinations as private bookmarks to return to later. Private bookmarks are visible only to the user who creates them. See Save a private bookmark . PDF download page selection : When you download a published dashboard as a PDF, you can now select specific pages or All pages to include in a single PDF. See Download a published dashboard as a PDF . Bulk import from Power BI and Tableau : Genie Code can now import up to 100 Power BI or Tableau files at a time as AI/BI dashboards and metric views. See Import multiple files in bulk . Field ",
       "published": "2026-10-22T00:00:00+00:00",
       "category": "AI/BI",
@@ -2419,7 +2563,7 @@
       "id": "11753db48319",
       "title": "Databricks SQL version 2026.42 is rolling out in Current",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202642-is-rolling-out-in-current",
-      "summary": "Databricks SQL version 2026.42 is rolling out to the Current channel. See features in 2026.42 .",
+      "summary": "Databricks SQL version 2026.42 is rolling out to the Current channel.",
       "published": "2026-10-19T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -2869,7 +3013,7 @@
       "id": "e43f3744777c",
       "title": "Databricks SQL version 2026.42 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202642-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.42 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "summary": "Databricks SQL version 2026.42 is now available in the Preview channel.",
       "published": "2026-10-12T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -3193,7 +3337,7 @@
       "id": "14658ece8cbf",
       "title": "Databricks SQL version 2026.39 is rolling out in Current",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202639-is-rolling-out-in-current",
-      "summary": "Databricks SQL version 2026.39 is rolling out to the Current channel. See features in 2026.39 .",
+      "summary": "Databricks SQL version 2026.39 is rolling out to the Current channel.",
       "published": "2026-10-05T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -3553,7 +3697,7 @@
       "id": "e72a3f91fea5",
       "title": "Databricks SQL version 2026.39 is now available in Preview",
       "link": "https://docs.databricks.com/aws/en/sql/release-notes/2026#databricks-sql-version-202639-is-now-available-in-preview",
-      "summary": "Databricks SQL version 2026.39 is now available in the Preview channel. This version includes the following changes: Operating system security updates. Miscellaneous bug fixes. This version doesn't include new features or behavioral changes.",
+      "summary": "Databricks SQL version 2026.39 is now available in the Preview channel.",
       "published": "2026-09-28T00:00:00+00:00",
       "category": "SQL",
       "domain": "docs.databricks.com"
@@ -4270,9 +4414,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "16e0ee5d2240",
+      "id": "12c506fda556",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-2",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-3",
       "summary": "More Tableau calculations in /importBI : Importing Tableau reports with the /importBI Genie Code command now supports more cases of parameterized calculations. See Import BI files using Genie Code . Relationship-scoped filters (Public Preview) : On a dashboard with relationships, each widget now responds only to filters whose dataset is related to it, so a filter no longer affects unrelated charts. See Dashboard relationships . Choose the warehouse for materialization : When you export a dashboard dataset as a materialized view in Unity Catalog, you can now choose which SQL warehouse runs the ",
       "published": "2026-09-10T00:00:00+00:00",
       "category": "AI/BI",
@@ -7420,9 +7564,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "12c506fda556",
+      "id": "66bf80945513",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-3",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-4",
       "summary": "Table header color customization : Authors can now set font color, background color, and text formatting for table column headers. See Table layout settings . Dashboard relationships (Private Preview) : Dashboard relationships, which allow users to create complex multi-fact data models, are now in Private Preview. See Dashboard relationships . Local metric view parameters : Local metric views now support parameters, allowing Databricks to dynamically change query inputs based on user selections in a UI. See Local metric views . Local metric view wildcard expressions : Local metric views now su",
       "published": "2026-06-18T00:00:00+00:00",
       "category": "AI/BI",
@@ -8041,9 +8185,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "66bf80945513",
+      "id": "f6eb4d54a65a",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-4",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-5",
       "summary": "Bookmark filter combinations : Dashboard authors can now save filter combinations as shared bookmarks, which viewers can quickly apply. See Bookmarks . Pivot table column improvements : Pivot table columns can now expand and collapse. See Pivot table configuration . Theme customization enhancements : New theme customization options are now available, including the ability to change axis and grid line colors, adjust widget layout (margin, padding, corner radius, and shadow), and apply a color ramp. See Manage AI/BI dashboard workspace themes . Workspace theme settings : New theme settings are n",
       "published": "2026-06-04T00:00:00+00:00",
       "category": "AI/BI",
@@ -9499,9 +9643,9 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "f6eb4d54a65a",
+      "id": "6ef106d212bc",
       "title": "Dashboard enhancements",
-      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-5",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#dashboard-enhancements-6",
       "summary": "Local metric views (Public Preview) : A new dataset type lets you create metric views directly in a dashboard using a low-code visual interface, without publishing to Unity Catalog first. See Local metric views . Edit hex color values inline : Authors can now click directly on a hex color value to edit it in place. View SQL for visualization widgets : Authors can now view the SQL behind specific visualization widgets while in draft mode. See View the visualization query . External embedding is now generally available : Embedding dashboards for external users is now generally available. See Wha",
       "published": "2026-04-09T00:00:00+00:00",
       "category": "AI/BI",
@@ -9889,7 +10033,7 @@
       "id": "f0b7b4dbdcab",
       "title": "Changes to OpenSharing (formerly Delta Sharing) open recipient tokens",
       "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#changes-to-opensharing-formerly-delta-sharing-open-recipient-tokens",
-      "summary": "Based on customer feedback and the introduction of OpenSharing , this change has been postponed from July 1, 2026. The new transition date will be updated when available. No immediate action is required. Existing recipient URLs and tokens continue to work as they do today. OpenSharing for open recipients will transition to a new recipient-specific URL format. New tokens created after the transition date will automatically use the new URL format. This change improves network security and lets recipients configure recipient-specific network policies and firewall rules. For AWS GovCloud and AWS G",
+      "summary": "The recipient-specific URL format rolled out in September 2026. This is the transition date referred to in this section. Bearer tokens created or rotated on or after the transition date use the new URL format, and the OpenSharing UI shows the new URL for OpenID Connect (OIDC) federation recipients. Existing recipient URLs and tokens continue to work until they expire. For bearer tokens issued before February 25, 2026, the latest automatic expiration date has moved from December 8, 2026, to February 25, 2027. Tokens with an earlier configured expiration date still expire on that date. OpenShari",
       "published": "2026-03-19T00:00:00+00:00",
       "category": "General",
       "domain": "docs.databricks.com"
@@ -11590,7 +11734,7 @@
       "id": "d19cdc193675",
       "title": "New token expiration policy for open Delta Sharing",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2025/december#new-token-expiration-policy-for-open-delta-sharing",
-      "summary": "All new Delta Sharing open sharing recipient tokens are issued with a maximum expiration of one year from the date of creation. Tokens with an expiration period longer than one year or no expiration date can no longer be created. Existing open sharing recipient tokens issued before December 8, 2025, with expiration dates after December 8, 2026, or with no expiration date, automatically expire on December 8, 2026. If you currently use recipient tokens with long or unlimited lifetimes, review your integrations and renew tokens as needed to avoid breaking changes after this date. See Create a rec",
+      "summary": "All new Delta Sharing open sharing recipient tokens are issued with a maximum expiration of one year from the date of creation. Tokens with an expiration period longer than one year or no expiration date can no longer be created. Existing open sharing recipient tokens issued before December 8, 2025, with expiration dates after December 8, 2026, or with no expiration date, automatically expire on December 8, 2026. If you currently use recipient tokens with long or unlimited lifetimes, review your integrations and renew tokens as needed to avoid breaking changes after this date. In November 2026",
       "published": "2025-12-08T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
