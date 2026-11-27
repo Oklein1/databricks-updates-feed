@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T14:42:39.735233+00:00",
+  "generated_at": "2026-11-27T14:41:17.434474+00:00",
   "source": "https://docs.databricks.com/aws/en/feed.xml",
-  "count": 1677,
+  "count": 1683,
   "items": [
     {
       "id": "b398c4e96ed2",
@@ -31,6 +31,15 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "d7187f70293a",
+      "title": "Google Gemini 4 Neon is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#google-gemini-4-neon-is-now-available-on-unity-gateway",
+      "summary": "Google Gemini 4 Neon is now available on Unity Gateway. Use the model service name system.ai.gemini-4-neon in your requests. Customers are responsible for ensuring their compliance with applicable terms .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "31cf4ef97aef",
       "title": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway",
       "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#moonshot-ai-kimi-k31-pro-fast-is-now-available-on-unity-gateway",
@@ -49,12 +58,39 @@
       "domain": "docs.databricks.com"
     },
     {
+      "id": "daf942af0253",
+      "title": "Google Gemini 4 Neon is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#google-gemini-4-neon-is-now-available-on-unity-gateway",
+      "summary": "Google Gemini 4 Neon is now available on Unity Gateway. Use the model service name system.ai.gemini-4-neon in your requests. Customers are responsible for ensuring their compliance with applicable terms .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
       "id": "32e674c0d481",
       "title": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway",
       "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#moonshot-ai-kimi-k31-pro-fast-is-now-available-on-unity-gateway",
       "summary": "Moonshot AI Kimi K3.1 Pro Fast is now available on Unity Gateway. It serves the same model as Kimi K3.1 Pro on a separate endpoint, with native vision and reasoning for coding, knowledge work, and agentic tool use. It's available on pay-per-token endpoints in us-east-1 . To query the model and see supported regions, see Use foundation models .",
       "published": "2026-11-25T00:00:00+00:00",
       "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "e3a231494eed",
+      "title": "Upcoming increase to the default sign-in session idle timeout",
+      "link": "https://docs.databricks.com/aws/en/release-notes/whats-coming#upcoming-increase-to-the-default-sign-in-session-idle-timeout",
+      "summary": "Starting December 15, 2026, the default idle timeout for Databricks sign-in sessions increases from 6 hours to 24 hours. Existing custom idle timeouts continue to apply. The default maximum session length remains 5 days. See Authentication and access control .",
+      "published": "2026-11-25T00:00:00+00:00",
+      "category": "General",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "634e6ce76ca4",
+      "title": "Account-only user access to Genie One is generally available",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#account-only-user-access-to-genie-one-is-generally-available",
+      "summary": "Account-only user access to account-level Genie One is now generally available. Users provisioned through automatic identity management or account-level System for Cross-domain Identity Management (SCIM) can use Genie One without being assigned to a workspace or granted a workspace entitlement. Unity Catalog privileges govern the data and assets that each user can access. See Account-only user access to Genie One .",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
@@ -85,10 +121,10 @@
       "domain": "docs.databricks.com"
     },
     {
-      "id": "a70fb5166136",
-      "title": "Genie Migrate conversion to Lakeflow pipelines is generally available",
-      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-migrate-conversion-to-lakeflow-pipelines-is-generally-available",
-      "summary": "Genie Migrate conversion of T-SQL scripts from SQL Server and Azure Synapse dedicated SQL pools into Lakeflow pipelines is now generally available . In a T-SQL migration project, choose the Spark Declarative Pipelines target framework, organize your files into groups, and choose a catalog and schema for each group. Each group becomes one serverless pipeline that Genie Migrate validates with a dry run. To use the Spark Declarative Pipelines target framework, a workspace admin must turn on Migration Projects Experimental Features from the Previews page. See Manage Databricks previews . See Suppo",
+      "id": "095bd2d46add",
+      "title": "Google Gemini Nano Banana 2.1 is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#google-gemini-nano-banana-21-is-now-available-on-unity-gateway",
+      "summary": "Google Gemini Nano Banana 2.1 is available on Unity Gateway. Use Foundation Model APIs to generate images from text and image inputs.",
       "published": "2026-11-24T00:00:00+00:00",
       "category": "Platform",
       "domain": "docs.databricks.com"
@@ -136,6 +172,15 @@
       "summary": "Providers can add Unity Catalog agent skills to OpenSharing shares and Databricks Marketplace listings, and Databricks recipients can use them. In some accounts, an account admin must turn on the Agent Skill Sharing preview. Sharing and using skills also requires the Enhanced Unity AI Gateway preview, which is in Beta . See Add agent skills to a share and Create a Marketplace listing .",
       "published": "2026-11-24T00:00:00+00:00",
       "category": "Platform",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "d66eb5bd89e1",
+      "title": "Google Gemini Nano Banana 2.1 is now available on Unity Gateway",
+      "link": "https://docs.databricks.com/aws/en/release-notes/unity-gateway#google-gemini-nano-banana-21-is-now-available-on-unity-gateway",
+      "summary": "Google Gemini Nano Banana 2.1 is available on Unity Gateway. Use Foundation Model APIs to generate images from text and image inputs.",
+      "published": "2026-11-24T00:00:00+00:00",
+      "category": "General",
       "domain": "docs.databricks.com"
     },
     {
@@ -253,6 +298,15 @@
       "summary": "If the Alertv2 Genie Analysis preview is enabled, alert owners can turn on Genie Code analysis in Advanced settings . When an alert changes to Triggered or Error , Genie Code starts an investigation and adds an Investigate link to the alert history. See Configure Genie Code analysis .",
       "published": "2026-11-23T00:00:00+00:00",
       "category": "SQL",
+      "domain": "docs.databricks.com"
+    },
+    {
+      "id": "2ae860610a1c",
+      "title": "Cross-workspace chat in account-level Genie One",
+      "link": "https://docs.databricks.com/aws/en/ai-bi/release-notes/2026#cross-workspace-chat-in-account-level-genie-one",
+      "summary": "Account-level Genie One now supports cross-workspace chat for workspaces in the same region and connected to the same Unity Catalog metastore. Workspace members can ask questions about and take action on assets across eligible workspaces. See Use cross-workspace chat .",
+      "published": "2026-11-20T00:00:00+00:00",
+      "category": "AI/BI",
       "domain": "docs.databricks.com"
     },
     {
